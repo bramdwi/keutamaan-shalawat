@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { usePreferences } from './hooks/usePreferences';
 import { useBookmarks } from './hooks/useBookmarks';
 import { useLastRead } from './hooks/useLastRead';
+import { usePWAInstall } from './hooks/usePWAInstall';
 import { getChapterById, allChapters } from './data/chapters';
 import type { SectionItem } from './types';
 import { Header } from './components/Header';
@@ -27,6 +28,7 @@ export function App() {
 
   const { bookmarks, toggleBookmark, isBookmarked, removeBookmark } = useBookmarks();
   const { lastRead, saveLastRead } = useLastRead();
+  const { triggerInstall, isInstalled } = usePWAInstall();
 
   const [activeChapterId, setActiveChapterId] = useState<string>(() => {
     return lastRead?.chapterId || 'bab-1';
@@ -41,50 +43,42 @@ export function App() {
   const [isBookmarksOpen, setIsBookmarksOpen] = useState<boolean>(false);
   const [isAboutOpen, setIsAboutOpen] = useState<boolean>(false);
 
-  // Toasts state
+  // Toast state
   const [toasts, setToasts] = useState<ToastMessage[]>([]);
 
-  const showToast = (text: string, type: 'success' | 'info' | 'error' = 'success') => {
-    const id = Date.now().toString() + Math.random().toString();
-    const newToast: ToastMessage = { id, text, type };
-    setToasts((prev) => [...prev, newToast]);
+  const showToast = (text: string, type: ToastMessage['type'] = 'info') => {
+    const id = Date.now().toString();
+    setToasts((prev) => [...prev, { id, text, type }]);
     setTimeout(() => {
       setToasts((prev) => prev.filter((t) => t.id !== id));
-    }, 2800);
+    }, 3000);
   };
 
-  const activeChapter = getChapterById(activeChapterId) || allChapters[0];
-
-  // Auto-record last read on chapter change
+  // Scroll to top when activeChapter changes (without target section)
   useEffect(() => {
-    if (activeChapter) {
-      saveLastRead(activeChapter.id, activeChapter.title, targetSectionId);
+    if (!targetSectionId) {
+      window.scrollTo({ top: 0, behavior: 'instant' });
     }
   }, [activeChapterId, targetSectionId]);
 
-  const handleSelectChapter = (chapterId: string, sectionId?: string) => {
+  const currentChapter = getChapterById(activeChapterId) || allChapters[0];
+
+  const handleSelectChapter = (chapterId: string) => {
+    setTargetSectionId(undefined);
     setActiveChapterId(chapterId);
-    setTargetSectionId(sectionId);
+    const targetChapter = getChapterById(chapterId);
+    if (targetChapter) {
+      saveLastRead(targetChapter.id, targetChapter.title);
+    }
+    window.scrollTo({ top: 0, behavior: 'instant' });
   };
 
-  const handleToggleBookmark = (
-    chapterId: string,
-    chapterTitle: string,
-    section: SectionItem
-  ) => {
-    const wasBookmarked = isBookmarked(chapterId, section.id);
-    toggleBookmark({
-      chapterId,
-      chapterTitle,
-      sectionId: section.id,
-      sectionTitle: section.title,
-      previewText: section.translation || section.arabic || ''
-    });
-
-    if (wasBookmarked) {
-      showToast('Hadits dihapus dari bookmark', 'info');
-    } else {
-      showToast('Hadits disimpan ke bookmark', 'success');
+  const handleSelectSearchResult = (chapterId: string, sectionId: string) => {
+    setActiveChapterId(chapterId);
+    setTargetSectionId(sectionId);
+    const targetChapter = getChapterById(chapterId);
+    if (targetChapter) {
+      saveLastRead(targetChapter.id, targetChapter.title, sectionId);
     }
   };
 
@@ -92,31 +86,61 @@ export function App() {
     if (lastRead) {
       setActiveChapterId(lastRead.chapterId);
       setTargetSectionId(lastRead.sectionId);
-      showToast(`Melanjutkan membaca: ${lastRead.chapterTitle}`, 'info');
+      showToast(`Melanjutkan: ${lastRead.chapterTitle}`, 'info');
     }
   };
 
+  const handleToggleBookmark = (
+    chapterId: string,
+    chapterTitle: string,
+    section: SectionItem
+  ) => {
+    const alreadyBookmarked = isBookmarked(chapterId, section.id);
+    toggleBookmark({
+      chapterId,
+      chapterTitle,
+      sectionId: section.id,
+      sectionTitle: section.title,
+      previewText: section.translation || section.arabic || section.title
+    });
+    showToast(
+      alreadyBookmarked ? 'Dihapus dari Bookmark' : 'Ditambahkan ke Bookmark',
+      alreadyBookmarked ? 'info' : 'success'
+    );
+  };
+
+  const handleInstallPWA = () => {
+    if (isInstalled) {
+      showToast('Aplikasi sudah terpasang di perangkat Anda', 'info');
+      return;
+    }
+    triggerInstall(() => {
+      setIsAboutOpen(true);
+      showToast('Ketuk menu browser lalu "Tambahkan ke Layar Utama" (Add to Home screen)', 'info');
+    });
+  };
+
   return (
-    <div className="min-h-screen flex flex-col transition-colors duration-200">
-      {/* Top Header */}
+    <div className="min-h-screen flex flex-col font-sans transition-colors duration-200">
+      {/* Top Fixed Header */}
       <Header
         onOpenDrawer={() => setIsDrawerOpen(true)}
-        onOpenSearch={() => setIsSearchOpen(true)}
         onOpenSettings={() => setIsSettingsOpen(true)}
-        onOpenBookmarks={() => setIsBookmarksOpen(true)}
+        onOpenSearch={() => setIsSearchOpen(true)}
         onOpenTasbih={() => setIsTasbihOpen(true)}
+        onOpenBookmarks={() => setIsBookmarksOpen(true)}
         currentTheme={preferences.theme}
         bookmarkCount={bookmarks.length}
       />
 
-      {/* Main Reader View */}
+      {/* Main Content Body */}
       <main className="flex-1">
         <ChapterReader
-          chapter={activeChapter}
+          chapter={currentChapter}
           preferences={preferences}
           onSelectChapter={handleSelectChapter}
-          isBookmarked={isBookmarked}
           onToggleBookmark={handleToggleBookmark}
+          isBookmarked={isBookmarked}
           onShowToast={showToast}
           targetSectionId={targetSectionId}
         />
@@ -145,6 +169,7 @@ export function App() {
         onResumeLastRead={handleResumeLastRead}
         onOpenAbout={() => setIsAboutOpen(true)}
         onOpenBookmarks={() => setIsBookmarksOpen(true)}
+        onInstallPWA={handleInstallPWA}
       />
 
       {/* Settings Modal */}
@@ -163,7 +188,7 @@ export function App() {
       <SearchModal
         isOpen={isSearchOpen}
         onClose={() => setIsSearchOpen(false)}
-        onSelectResult={(chapId, secId) => handleSelectChapter(chapId, secId)}
+        onSelectResult={handleSelectSearchResult}
         currentTheme={preferences.theme}
       />
 
@@ -179,11 +204,8 @@ export function App() {
         isOpen={isBookmarksOpen}
         onClose={() => setIsBookmarksOpen(false)}
         bookmarks={bookmarks}
-        onSelectBookmark={(chapId, secId) => handleSelectChapter(chapId, secId)}
-        onRemoveBookmark={(chapId, secId) => {
-          removeBookmark(chapId, secId);
-          showToast('Bookmark dihapus', 'info');
-        }}
+        onRemoveBookmark={removeBookmark}
+        onSelectBookmark={handleSelectSearchResult}
         currentTheme={preferences.theme}
       />
 
@@ -194,10 +216,9 @@ export function App() {
         currentTheme={preferences.theme}
       />
 
-      {/* Toast Notifications */}
+      {/* Global Toast Notifications */}
       <Toast toasts={toasts} />
     </div>
   );
 }
-
 export default App;

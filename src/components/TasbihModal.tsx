@@ -15,6 +15,7 @@ export const TasbihModal: React.FC<TasbihModalProps> = ({
   onClose,
   currentTheme
 }) => {
+  const [activeCategory, setActiveCategory] = useState<string>('all');
   const [selectedAmalanId, setSelectedAmalanId] = useState<string>(tasbihAmalanList[0].id);
   const [count, setCount] = useState<number>(0);
   const [target, setTarget] = useState<number>(tasbihAmalanList[0].defaultTarget);
@@ -26,10 +27,15 @@ export const TasbihModal: React.FC<TasbihModalProps> = ({
   const currentAmalan: TasbihAmalan =
     tasbihAmalanList.find((a) => a.id === selectedAmalanId) || tasbihAmalanList[0];
 
+  const filteredAmalan =
+    activeCategory === 'all'
+      ? tasbihAmalanList
+      : tasbihAmalanList.filter((a) => a.category === activeCategory);
+
   const handleSelectAmalan = (amalan: TasbihAmalan) => {
     setSelectedAmalanId(amalan.id);
     setTarget(amalan.defaultTarget);
-    setCount(0); // reset count on amalan change for fresh wirid
+    setCount(0); // reset count on amalan change
     if (isVibrate && typeof navigator !== 'undefined' && navigator.vibrate) {
       navigator.vibrate(40);
     }
@@ -82,7 +88,15 @@ export const TasbihModal: React.FC<TasbihModalProps> = ({
   const progressPercent = target > 0 ? Math.min(100, (count / target) * 100) : 0;
   const targetReached = target > 0 && count >= target;
 
-  const quickTargetOptions = [7, 10, 33, 80, 100, 300, 1000, 0];
+  const quickTargetOptions = [1, 3, 7, 10, 33, 80, 100, 300, 1000, 0];
+
+  const categories = [
+    { id: 'all', label: 'Semua Amalan' },
+    { id: 'jumat', label: 'Hari Jumat' },
+    { id: 'harian', label: 'Harian & Pagi/Petang' },
+    { id: 'ibadah', label: 'Ibadah & Shalat' },
+    { id: 'penyelamat', label: 'Karomah & Penyelamat' }
+  ];
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
@@ -129,35 +143,43 @@ export const TasbihModal: React.FC<TasbihModalProps> = ({
 
         {/* Scrollable Body Content */}
         <div className="flex-1 overflow-y-auto py-3 space-y-4 scrollbar-thin">
-          {/* Amalan Selector: Horizontal Chips */}
+          {/* Category Filter Tabs */}
           <div>
-            <div className="flex items-center justify-between mb-1.5 px-0.5">
-              <label className="text-[11px] font-bold uppercase tracking-wider opacity-60">
-                Pilih Amalan Wirid Kitab
-              </label>
-              <span className="text-[10px] text-emerald-700 dark:text-emerald-400 font-semibold">
-                {tasbihAmalanList.length} Pilihan Amalan
-              </span>
+            <div className="flex items-center gap-1.5 overflow-x-auto pb-1.5 scrollbar-thin">
+              {categories.map((cat) => (
+                <button
+                  key={cat.id}
+                  onClick={() => setActiveCategory(cat.id)}
+                  className={`px-2.5 py-1 rounded-lg text-[11px] font-semibold whitespace-nowrap transition-all ${
+                    activeCategory === cat.id
+                      ? 'bg-emerald-600 text-white shadow-xs'
+                      : 'bg-black/5 dark:bg-white/5 opacity-75 hover:opacity-100'
+                  }`}
+                >
+                  {cat.label}
+                </button>
+              ))}
             </div>
 
-            <div className="flex gap-1.5 overflow-x-auto pb-2 pt-0.5 scrollbar-thin">
-              {tasbihAmalanList.map((item) => {
+            {/* Amalan Selector: Horizontal Chips */}
+            <div className="flex gap-1.5 overflow-x-auto pb-2 pt-1.5 scrollbar-thin">
+              {filteredAmalan.map((item) => {
                 const isSelected = item.id === currentAmalan.id;
                 return (
                   <button
                     key={item.id}
                     onClick={() => handleSelectAmalan(item)}
-                    className={`px-3 py-2 rounded-xl border text-xs font-semibold shrink-0 transition-all text-left flex items-center gap-1.5 ${
+                    className={`px-3 py-2 rounded-xl border text-xs font-semibold shrink-0 transition-all text-left flex items-center gap-2 ${
                       isSelected
-                        ? 'bg-emerald-600 text-white border-emerald-600 shadow-sm scale-100'
+                        ? 'bg-emerald-600 text-white border-emerald-600 shadow-sm scale-100 ring-2 ring-emerald-500/40'
                         : 'border-black/10 dark:border-white/10 opacity-75 hover:opacity-100 bg-black/5 dark:bg-white/5'
                     }`}
                   >
                     <Award className={`w-3.5 h-3.5 ${isSelected ? 'text-white' : 'text-emerald-600 dark:text-emerald-400'}`} />
                     <div className="flex flex-col">
-                      <span className="truncate max-w-[130px] sm:max-w-[150px]">{item.name}</span>
+                      <span className="truncate max-w-[140px] sm:max-w-[160px] font-bold">{item.name}</span>
                       <span className={`text-[9px] ${isSelected ? 'text-emerald-100' : 'opacity-60'}`}>
-                        Target: {item.defaultTarget === 0 ? 'Bebas' : `${item.defaultTarget}x`}
+                        {item.badge} • {item.defaultTarget === 0 ? 'Bebas' : `${item.defaultTarget}x`}
                       </span>
                     </div>
                   </button>

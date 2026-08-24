@@ -111,18 +111,18 @@ export const SidebarDrawer: React.FC<SidebarDrawerProps> = ({
         {lastRead && (
           <div className="p-3 mx-3 mt-3 rounded-xl border border-emerald-600/20 bg-emerald-600/10">
             <div className="flex items-center justify-between mb-1">
-              <div className="flex items-center gap-1.5 text-[11px] font-semibold text-emerald-700 dark:text-emerald-400">
+              <div className="flex items-center gap-1.5 text-[11px] font-semibold text-emerald-700 dark:text-white">
                 <RotateCcw className="w-3.5 h-3.5" />
                 <span>Terakhir Dibaca</span>
               </div>
-              <span className="text-[10px] opacity-60">{lastRead.chapterTitle.split(':')[0]}</span>
+              <span className="text-[10px] opacity-60 dark:text-white/70">{lastRead.chapterTitle.split(':')[0]}</span>
             </div>
             <button
               onClick={() => {
                 onResumeLastRead();
                 onClose();
               }}
-              className="w-full text-left text-xs font-bold truncate hover:underline py-0.5 text-emerald-800 dark:text-emerald-300"
+              className="w-full text-left text-xs font-bold truncate hover:underline py-0.5 text-emerald-800 dark:text-white"
             >
               {lastRead.chapterTitle}
             </button>
@@ -148,16 +148,16 @@ export const SidebarDrawer: React.FC<SidebarDrawerProps> = ({
 
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-700 dark:text-white">
                       {chapter.numberText}
                     </span>
                     {chapter.sections.length > 0 && (
-                      <span className="text-[10px] px-1.5 py-0.5 rounded-md bg-black/5 dark:bg-white/10 opacity-75 font-medium">
+                      <span className="text-[10px] px-1.5 py-0.5 rounded-md bg-black/5 dark:bg-white/10 opacity-75 font-medium text-inherit dark:text-white">
                         {chapter.sections.length} Bagian
                       </span>
                     )}
                   </div>
-                  <h3 className="text-xs sm:text-sm font-semibold leading-snug line-clamp-2 mt-0.5">
+                  <h3 className="text-xs sm:text-sm font-semibold leading-snug line-clamp-2 mt-0.5 text-inherit dark:text-white">
                     {chapter.title}
                   </h3>
                 </div>

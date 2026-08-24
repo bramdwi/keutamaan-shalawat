@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, RotateCcw, Sparkles, Volume2, VolumeX, CheckCircle, BookOpen, ChevronDown, ChevronUp, Award } from 'lucide-react';
+import { X, RotateCcw, Sparkles, Volume2, VolumeX, CheckCircle, BookOpen, ChevronDown, ChevronUp, Award, ArrowRight } from 'lucide-react';
 import type { ThemeMode } from '../types';
 import { tasbihAmalanList } from '../data/tasbihAmalan';
 import type { TasbihAmalan } from '../data/tasbihAmalan';
@@ -8,12 +8,14 @@ interface TasbihModalProps {
   isOpen: boolean;
   onClose: () => void;
   currentTheme: ThemeMode;
+  onNavigateToSection?: (chapterId: string, sectionId: string) => void;
 }
 
 export const TasbihModal: React.FC<TasbihModalProps> = ({
   isOpen,
   onClose,
-  currentTheme
+  currentTheme,
+  onNavigateToSection
 }) => {
   const [activeCategory, setActiveCategory] = useState<string>('all');
   const [selectedAmalanId, setSelectedAmalanId] = useState<string>(tasbihAmalanList[0].id);
@@ -203,7 +205,7 @@ export const TasbihModal: React.FC<TasbihModalProps> = ({
               "{currentAmalan.latin}"
             </p>
 
-            {/* Collapsible Details: Fadhilah & Source */}
+            {/* Collapsible Details: Fadhilah, Source & Direct Link to Story */}
             <div className="pt-2 border-t border-black/5 dark:border-white/10 text-left">
               <button
                 onClick={() => setShowDetail(!showDetail)}
@@ -217,16 +219,31 @@ export const TasbihModal: React.FC<TasbihModalProps> = ({
               </button>
 
               {showDetail && (
-                <div className="mt-2 p-2.5 rounded-xl bg-black/5 dark:bg-white/5 text-xs space-y-1.5 border border-black/5 dark:border-white/5 animate-in fade-in duration-200">
+                <div className="mt-2 p-3 rounded-xl bg-black/5 dark:bg-white/5 text-xs space-y-2 border border-black/5 dark:border-white/5 animate-in fade-in duration-200">
                   <p className="leading-relaxed opacity-85">
                     <strong>Artinya:</strong> {currentAmalan.translation}
                   </p>
                   <p className="leading-relaxed text-emerald-800 dark:text-emerald-300">
                     <strong>Fadhilah:</strong> {currentAmalan.fadhilah}
                   </p>
-                  <p className="text-[10px] opacity-60 font-medium pt-1">
-                    📖 <em>{currentAmalan.source}</em>
-                  </p>
+                  <div className="flex items-center justify-between pt-1 border-t border-black/5 dark:border-white/5 text-[11px] opacity-75">
+                    <span>📖 <em>{currentAmalan.source}</em></span>
+                  </div>
+
+                  {/* Direct Clickable Link to Full Hadith/Story */}
+                  {onNavigateToSection && (
+                    <button
+                      onClick={() => {
+                        onClose();
+                        onNavigateToSection(currentAmalan.targetChapterId, currentAmalan.targetSectionId);
+                      }}
+                      className="mt-1 w-full flex items-center justify-center gap-2 py-2 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold text-xs transition-all shadow-xs group"
+                    >
+                      <BookOpen className="w-3.5 h-3.5" />
+                      <span>Baca Riwayat / Kisah Lengkap di Kitab</span>
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    </button>
+                  )}
                 </div>
               )}
             </div>

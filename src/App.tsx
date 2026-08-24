@@ -197,6 +197,7 @@ export function App() {
         isOpen={isTasbihOpen}
         onClose={() => setIsTasbihOpen(false)}
         currentTheme={preferences.theme}
+        onNavigateToSection={handleSelectSearchResult}
       />
 
       {/* Bookmarks Modal */}

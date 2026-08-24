@@ -118,7 +118,7 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
   const getCardBg = () => {
     switch (preferences.theme) {
       case 'dark':
-        return 'bg-[#08291e] border-emerald-800/40 text-emerald-100 shadow-md';
+        return 'bg-[#08291e] border-emerald-800/40 text-white shadow-md';
       case 'sepia':
         return 'bg-[#fcf7ee] border-amber-800/20 text-[#3b2a1a] shadow-sm';
       default:
@@ -129,7 +129,7 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
   const getFaedahBoxBg = () => {
     switch (preferences.theme) {
       case 'dark':
-        return 'bg-emerald-950/60 border-emerald-700/30 text-emerald-200';
+        return 'bg-emerald-950/70 border-emerald-700/40 text-white';
       case 'sepia':
         return 'bg-[#f4ece0] border-amber-700/20 text-[#4c3621]';
       default:
@@ -140,7 +140,7 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
   const getArabicTextColor = () => {
     switch (preferences.theme) {
       case 'dark':
-        return 'text-slate-100';
+        return 'text-white';
       case 'sepia':
         return 'text-[#2a1708]';
       default:
@@ -275,8 +275,8 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
 
                 {/* Transliteration */}
                 {preferences.showTransliteration && section.transliteration && (
-                  <div className="mb-4 text-xs sm:text-sm italic opacity-75 leading-relaxed bg-black/5 dark:bg-white/5 p-3 sm:p-4 rounded-xl border border-black/5 dark:border-white/5">
-                    <span className="font-semibold not-italic text-[11px] block uppercase tracking-wider text-emerald-700 dark:text-emerald-400 mb-1">
+                  <div className="mb-4 text-xs sm:text-sm italic leading-relaxed bg-black/5 dark:bg-white/10 p-3 sm:p-4 rounded-xl border border-black/5 dark:border-white/10 dark:text-slate-100">
+                    <span className="font-semibold not-italic text-[11px] block uppercase tracking-wider text-emerald-700 dark:text-emerald-300 mb-1">
                       Transliterasi:
                     </span>
                     {section.transliteration}
@@ -286,7 +286,7 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
                 {/* Indonesian Translation */}
                 {preferences.showTranslation && section.translation && (
                   <div className="my-4">
-                    <p className={`${getLatinSizeClass()} font-normal leading-relaxed opacity-95`}>
+                    <p className={`${getLatinSizeClass()} font-normal leading-relaxed text-inherit dark:text-white`}>
                       "{section.translation}"
                     </p>
                   </div>
@@ -294,8 +294,8 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
 
                 {/* Narrator / Perawi */}
                 {section.narrator && (
-                  <div className="mt-3 text-xs sm:text-sm font-medium text-emerald-800 dark:text-emerald-300 opacity-90 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
+                  <div className="mt-3 text-xs sm:text-sm font-medium text-emerald-800 dark:text-emerald-300 flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
                     <span>Riwayat: {section.narrator}</span>
                   </div>
                 )}

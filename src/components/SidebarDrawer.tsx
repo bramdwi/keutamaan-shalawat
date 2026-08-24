@@ -53,7 +53,7 @@ export const SidebarDrawer: React.FC<SidebarDrawerProps> = ({
   const getDrawerBg = () => {
     switch (currentTheme) {
       case 'dark':
-        return 'bg-[#061e16] border-emerald-900/60 text-slate-100';
+        return 'bg-[#061e16] border-emerald-900/60 text-white';
       case 'sepia':
         return 'bg-[#f8f1e3] border-amber-900/20 text-[#3b2a1a]';
       default:

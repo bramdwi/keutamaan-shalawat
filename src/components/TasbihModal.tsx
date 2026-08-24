@@ -68,7 +68,7 @@ export const TasbihModal: React.FC<TasbihModalProps> = ({
   const getModalBg = () => {
     switch (currentTheme) {
       case 'dark':
-        return 'bg-[#06241a] text-white border-emerald-800/60 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)]';
+        return 'bg-[#06241a] text-slate-100 border-emerald-800/60 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)]';
       case 'sepia':
         return 'bg-[#fcf7ee] text-[#332214] border-amber-800/30';
       default:
@@ -79,7 +79,7 @@ export const TasbihModal: React.FC<TasbihModalProps> = ({
   const getArabicTextColor = () => {
     switch (currentTheme) {
       case 'dark':
-        return 'text-white';
+        return 'text-slate-100';
       case 'sepia':
         return 'text-[#2a1708]';
       default:

@@ -18,7 +18,7 @@ export const AboutModal: React.FC<AboutModalProps> = ({
   const getModalBg = () => {
     switch (currentTheme) {
       case 'dark':
-        return 'bg-[#06241a] text-white border-emerald-800/50';
+        return 'bg-[#06241a] text-emerald-100 border-emerald-800/50';
       case 'sepia':
         return 'bg-[#fcf7ee] text-[#332214] border-amber-800/30';
       default:

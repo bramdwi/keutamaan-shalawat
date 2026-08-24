@@ -24,7 +24,7 @@ export const Header: React.FC<HeaderProps> = ({
   const getHeaderBg = () => {
     switch (currentTheme) {
       case 'dark':
-        return 'bg-[#06241a]/90 border-emerald-800/40 text-white';
+        return 'bg-[#06241a]/90 border-emerald-800/40 text-emerald-100';
       case 'sepia':
         return 'bg-[#f4ecd8]/95 border-amber-800/20 text-[#2c1d11]';
       default:

@@ -118,7 +118,7 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
   const getCardBg = () => {
     switch (preferences.theme) {
       case 'dark':
-        return 'bg-[#08291e] border-emerald-800/40 text-white shadow-md';
+        return 'bg-[#08291e] border-emerald-800/40 text-emerald-100 shadow-md';
       case 'sepia':
         return 'bg-[#fcf7ee] border-amber-800/20 text-[#3b2a1a] shadow-sm';
       default:
@@ -129,7 +129,7 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
   const getFaedahBoxBg = () => {
     switch (preferences.theme) {
       case 'dark':
-        return 'bg-emerald-950/70 border-emerald-700/40 text-white';
+        return 'bg-emerald-950/60 border-emerald-700/30 text-emerald-200';
       case 'sepia':
         return 'bg-[#f4ece0] border-amber-700/20 text-[#4c3621]';
       default:
@@ -140,7 +140,7 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
   const getArabicTextColor = () => {
     switch (preferences.theme) {
       case 'dark':
-        return 'text-white';
+        return 'text-slate-100';
       case 'sepia':
         return 'text-[#2a1708]';
       default:
@@ -156,23 +156,23 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
     <div ref={readerTopRef} className="max-w-4xl mx-auto px-3.5 sm:px-6 py-6 sm:py-10">
       {/* Chapter Banner */}
       <div className="mb-8 sm:mb-12 text-center relative overflow-hidden rounded-2xl sm:rounded-3xl p-6 sm:p-10 border border-emerald-600/20 bg-gradient-to-b from-emerald-700/10 via-emerald-600/5 to-transparent">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-600/15 text-emerald-800 dark:text-white mb-3 border border-emerald-600/20">
-          <BookOpen className="w-3.5 h-3.5 text-emerald-600 dark:text-white" />
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-600/15 text-emerald-800 dark:text-emerald-300 mb-3 border border-emerald-600/20">
+          <BookOpen className="w-3.5 h-3.5" />
           <span>{chapter.numberText}</span>
         </div>
 
-        <h1 className="text-2xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-3 text-inherit dark:text-white">
+        <h1 className="text-2xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-3">
           {chapter.title}
         </h1>
 
         {chapter.subtitle && (
-          <p className="text-sm sm:text-base font-medium opacity-80 dark:opacity-100 max-w-2xl mx-auto mb-4 text-inherit dark:text-white">
+          <p className="text-sm sm:text-base font-medium opacity-80 max-w-2xl mx-auto mb-4">
             {chapter.subtitle}
           </p>
         )}
 
         {chapter.description && (
-          <p className="text-xs sm:text-sm opacity-70 dark:opacity-90 max-w-xl mx-auto leading-relaxed italic border-t border-black/5 dark:border-white/10 pt-3 text-inherit dark:text-white">
+          <p className="text-xs sm:text-sm opacity-70 max-w-xl mx-auto leading-relaxed italic border-t border-black/5 dark:border-white/10 pt-3">
             "{chapter.description}"
           </p>
         )}
@@ -183,8 +183,8 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
         {chapter.sections.length === 0 ? (
           <div className="text-center py-16 px-4 rounded-2xl border border-dashed border-emerald-600/30 bg-emerald-500/5">
             <Sparkles className="w-12 h-12 text-emerald-500 mx-auto mb-3 opacity-60 animate-pulse" />
-            <h3 className="text-lg font-bold mb-1 text-inherit dark:text-white">Menunggu Isi Teks Bab Ini</h3>
-            <p className="text-xs sm:text-sm opacity-70 dark:opacity-90 max-w-md mx-auto text-inherit dark:text-white">
+            <h3 className="text-lg font-bold mb-1">Menunggu Isi Teks Bab Ini</h3>
+            <p className="text-xs sm:text-sm opacity-70 max-w-md mx-auto">
               Silakan paste isi teks untuk {chapter.title} di chat, dan konten akan otomatis tampil di sini secara terstruktur.
             </p>
           </div>
@@ -202,16 +202,16 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
                 {/* Section Header */}
                 <div className="flex items-start justify-between gap-3 pb-4 border-b border-black/10 dark:border-white/10 mb-6">
                   <div className="flex items-start gap-2.5">
-                    <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-emerald-600/15 text-emerald-800 dark:text-white font-bold text-xs sm:text-sm flex items-center justify-center shrink-0 mt-0.5 border border-emerald-600/20">
+                    <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-emerald-600/15 text-emerald-800 dark:text-emerald-300 font-bold text-xs sm:text-sm flex items-center justify-center shrink-0 mt-0.5 border border-emerald-600/20">
                       {section.number || idx + 1}
                     </span>
                     <div>
-                      <h2 className="text-base sm:text-xl font-bold leading-snug text-inherit dark:text-white">
+                      <h2 className="text-base sm:text-xl font-bold leading-snug">
                         {section.title}
                       </h2>
                       {section.hadithNumber && (
-                        <div className="flex items-center gap-1 text-[11px] sm:text-xs opacity-70 dark:opacity-90 dark:text-white mt-1">
-                          <Hash className="w-3 h-3 text-emerald-600 dark:text-white" />
+                        <div className="flex items-center gap-1 text-[11px] sm:text-xs opacity-70 mt-1">
+                          <Hash className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
                           <span>{section.hadithNumber}</span>
                         </div>
                       )}
@@ -275,8 +275,8 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
 
                 {/* Transliteration */}
                 {preferences.showTransliteration && section.transliteration && (
-                  <div className="mb-4 text-xs sm:text-sm italic leading-relaxed bg-black/5 dark:bg-white/10 p-3 sm:p-4 rounded-xl border border-black/5 dark:border-white/10 dark:text-slate-100">
-                    <span className="font-semibold not-italic text-[11px] block uppercase tracking-wider text-emerald-700 dark:text-emerald-300 mb-1">
+                  <div className="mb-4 text-xs sm:text-sm italic opacity-75 leading-relaxed bg-black/5 dark:bg-white/5 p-3 sm:p-4 rounded-xl border border-black/5 dark:border-white/5">
+                    <span className="font-semibold not-italic text-[11px] block uppercase tracking-wider text-emerald-700 dark:text-emerald-400 mb-1">
                       Transliterasi:
                     </span>
                     {section.transliteration}
@@ -286,7 +286,7 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
                 {/* Indonesian Translation */}
                 {preferences.showTranslation && section.translation && (
                   <div className="my-4">
-                    <p className={`${getLatinSizeClass()} font-normal leading-relaxed text-inherit dark:text-white`}>
+                    <p className={`${getLatinSizeClass()} font-normal leading-relaxed opacity-95`}>
                       "{section.translation}"
                     </p>
                   </div>
@@ -294,8 +294,8 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
 
                 {/* Narrator / Perawi */}
                 {section.narrator && (
-                  <div className="mt-3 text-xs sm:text-sm font-medium text-emerald-800 dark:text-emerald-300 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
+                  <div className="mt-3 text-xs sm:text-sm font-medium text-emerald-800 dark:text-emerald-300 opacity-90 flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
                     <span>Riwayat: {section.narrator}</span>
                   </div>
                 )}
@@ -305,17 +305,17 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
                   section.explanation &&
                   section.explanation.length > 0 && (
                     <div className={`mt-6 p-4 sm:p-5 rounded-xl sm:rounded-2xl border ${getFaedahBoxBg()}`}>
-                      <div className="flex items-center gap-1.5 font-bold text-xs sm:text-sm mb-2.5 text-emerald-800 dark:text-white uppercase tracking-wide">
-                        <Sparkles className="w-4 h-4 text-emerald-600 dark:text-emerald-300 shrink-0" />
+                      <div className="flex items-center gap-1.5 font-bold text-xs sm:text-sm mb-2.5 text-emerald-800 dark:text-emerald-300 uppercase tracking-wide">
+                        <Sparkles className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
                         <span>Faedah & Penjelasan:</span>
                       </div>
                       <ul className="space-y-2 text-xs sm:text-sm leading-relaxed">
                         {section.explanation.map((exp, expIdx) => (
                           <li key={expIdx} className="flex items-start gap-2">
-                            <span className="text-emerald-600 dark:text-emerald-300 font-bold shrink-0 mt-0.5">
+                            <span className="text-emerald-600 dark:text-emerald-400 font-bold shrink-0 mt-0.5">
                               •
                             </span>
-                            <span className="opacity-95 text-inherit dark:text-white">{exp}</span>
+                            <span className="opacity-90">{exp}</span>
                           </li>
                         ))}
                       </ul>
@@ -328,7 +328,7 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
                     {section.tags.map((tag, tIdx) => (
                       <span
                         key={tIdx}
-                        className="text-[10px] sm:text-[11px] px-2 py-0.5 rounded-md bg-black/5 dark:bg-white/10 opacity-70 font-medium text-inherit dark:text-white"
+                        className="text-[10px] sm:text-[11px] px-2 py-0.5 rounded-md bg-black/5 dark:bg-white/10 opacity-70 font-medium"
                       >
                         #{tag}
                       </span>
@@ -352,10 +352,10 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
               <ArrowLeft className="w-5 h-5" />
             </div>
             <div className="min-w-0">
-              <span className="text-[10px] font-bold uppercase tracking-wider opacity-60 dark:text-white/70 block">
+              <span className="text-[10px] font-bold uppercase tracking-wider opacity-60 block">
                 Bab Sebelumnya
               </span>
-              <span className="text-xs sm:text-sm font-bold truncate block text-inherit dark:text-white">
+              <span className="text-xs sm:text-sm font-bold truncate block">
                 {prev.numberRoman}: {prev.title}
               </span>
             </div>
@@ -370,10 +370,10 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
             className="w-full sm:w-auto flex-1 flex items-center justify-end gap-3 p-4 rounded-2xl border border-emerald-600/30 hover:bg-emerald-600/10 active:scale-98 transition-all text-right group"
           >
             <div className="min-w-0">
-              <span className="text-[10px] font-bold uppercase tracking-wider opacity-60 dark:text-white/70 block">
+              <span className="text-[10px] font-bold uppercase tracking-wider opacity-60 block">
                 Bab Selanjutnya
               </span>
-              <span className="text-xs sm:text-sm font-bold truncate block text-inherit dark:text-white">
+              <span className="text-xs sm:text-sm font-bold truncate block">
                 {next.numberRoman}: {next.title}
               </span>
             </div>

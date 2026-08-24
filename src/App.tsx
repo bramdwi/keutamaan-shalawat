@@ -147,12 +147,12 @@ export function App() {
       </main>
 
       {/* Footer */}
-      <footer className="py-8 px-4 text-center text-xs opacity-75 dark:text-white/80 border-t border-black/5 dark:border-white/5 transition-colors">
+      <footer className="py-8 px-4 text-center text-xs opacity-60 border-t border-black/5 dark:border-white/5 transition-colors">
         <div className="max-w-md mx-auto space-y-1">
-          <p className="font-semibold text-inherit dark:text-white">
+          <p className="font-semibold">
             Keutamaan Shalawat ﷺ • Risalah Digital
           </p>
-          <p className="text-[11px] opacity-75 dark:text-white/70">
+          <p className="text-[11px] opacity-75">
             Didigitalisasi Oleh : Abu Basyir, Jakarta
           </p>
         </div>

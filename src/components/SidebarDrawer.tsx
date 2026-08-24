@@ -91,9 +91,7 @@ export const SidebarDrawer: React.FC<SidebarDrawerProps> = ({
         {/* Drawer Header */}
         <div className="p-4 sm:p-5 border-b border-black/10 dark:border-white/10 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-xl bg-emerald-600/15 flex items-center justify-center border border-emerald-600/20">
-              <span className="font-arabic text-emerald-600 dark:text-emerald-400 text-base">ﷺ</span>
-            </div>
+            <img src="/favicon.svg" alt="Kubah Nabawi" className="w-8 h-8 rounded-xl shadow-xs shrink-0" />
             <div>
               <h2 className="text-sm sm:text-base font-bold tracking-tight">Daftar Isi Risalah</h2>
               <p className="text-[11px] opacity-60">Fadhail Shalawat</p>

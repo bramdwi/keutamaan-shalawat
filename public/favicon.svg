@@ -1,47 +1,151 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
+    <!-- Background Gradient: Deep Luxurious Emerald -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#064e3b" />
-      <stop offset="50%" stop-color="#047857" />
-      <stop offset="100%" stop-color="#065f46" />
+      <stop offset="0%" stop-color="#021f16" />
+      <stop offset="50%" stop-color="#053325" />
+      <stop offset="100%" stop-color="#01140e" />
     </linearGradient>
+
+    <!-- Dome Volumetric Green Gradient -->
+    <linearGradient id="domeGrad" x1="25%" y1="15%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="25%" stop-color="#10b981" />
+      <stop offset="65%" stop-color="#059669" />
+      <stop offset="90%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+
+    <!-- Dome Shadow & Depth Gradient -->
+    <linearGradient id="domeShadow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.15" />
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="70%" stop-color="#000000" stop-opacity="0.0" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.35" />
+    </linearGradient>
+
+    <!-- Golden Spire & Finial Gradient -->
     <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fef08a" />
-      <stop offset="50%" stop-color="#f59e0b" />
-      <stop offset="100%" stop-color="#d97706" />
+      <stop offset="0%" stop-color="#fffbeb" />
+      <stop offset="30%" stop-color="#fde047" />
+      <stop offset="60%" stop-color="#eab308" />
+      <stop offset="90%" stop-color="#ca8a04" />
+      <stop offset="100%" stop-color="#854d0e" />
     </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
+
+    <!-- Golden Base Glow Filter -->
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
-  </defs>
-  
-  <!-- Rounded Background -->
-  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
-  
-  <!-- Outer Islamic Geometric Border Motif -->
-  <circle cx="256" cy="256" r="210" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-dasharray="10, 6" opacity="0.6" />
-  <circle cx="256" cy="256" r="195" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.4" />
 
-  <!-- Center Symbol: Book & Crescent / Lantern Motif -->
-  <g transform="translate(0, -10)">
-    <!-- Crescent Moon -->
-    <path d="M 256 120 A 100 100 0 1 0 356 220 A 80 80 0 1 1 256 120 Z" fill="url(#goldGrad)" filter="url(#glow)" />
+    <!-- Radial Ambient Glow behind Dome -->
+    <radialGradient id="ambientGlow" cx="50%" cy="45%" r="45%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.3" />
+      <stop offset="60%" stop-color="#047857" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- 1. Background Rounded Canvas -->
+  <rect width="512" height="512" rx="116" fill="url(#bgGrad)" />
+
+  <!-- 2. Minimalist Ambient Lighting -->
+  <circle cx="256" cy="240" r="190" fill="url(#ambientGlow)" />
+
+  <!-- 3. Minimalist Subtle Golden Outer Ring -->
+  <circle cx="256" cy="256" r="215" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.25" />
+  
+  <!-- 4. Subtle Cardinal Accent Dots -->
+  <circle cx="256" cy="38" r="3" fill="#fde047" opacity="0.6" />
+  <circle cx="256" cy="474" r="3" fill="#fde047" opacity="0.6" />
+  <circle cx="38" cy="256" r="3" fill="#fde047" opacity="0.6" />
+  <circle cx="474" cy="256" r="3" fill="#fde047" opacity="0.6" />
+
+  <!-- 5. THE PROPHET'S GREEN DOME (Al-Qubbah Al-Khadhra' ﷺ) -->
+  <g transform="translate(0, 15)">
     
-    <!-- Eight-pointed Star (Rub el Hizb) in Moon -->
-    <g transform="translate(305, 175) scale(0.7)">
-      <polygon points="20,0 26,14 40,20 26,26 20,40 14,26 0,20 14,14" fill="#ffffff" />
+    <!-- Base Drum & Foundation -->
+    <path d="M 126 395 L 386 395 L 386 425 C 386 430 382 434 376 434 L 136 434 C 130 434 126 430 126 425 Z" fill="#03261b" stroke="#044d37" stroke-width="2" />
+    
+    <!-- Lower Drum Wall -->
+    <rect x="132" y="355" width="248" height="42" fill="#043928" />
+
+    <!-- Arched Arcade Windows at Base (Khas Masjid Nabawi) -->
+    <g fill="#021b13" stroke="#059669" stroke-width="1.5" opacity="0.9">
+      <!-- 7 Arched Windows -->
+      <path d="M 148 392 L 148 372 C 148 365 158 365 158 372 L 158 392 Z" />
+      <path d="M 180 392 L 180 370 C 180 363 190 363 190 370 L 190 392 Z" />
+      <path d="M 213 392 L 213 369 C 213 361 224 361 224 369 L 224 392 Z" />
+      <path d="M 246 392 L 246 368 C 246 359 266 359 266 368 L 266 392 Z" />
+      <path d="M 288 392 L 288 369 C 288 361 299 361 299 369 L 299 392 Z" />
+      <path d="M 322 392 L 322 370 C 322 363 332 363 332 370 L 332 392 Z" />
+      <path d="M 354 392 L 354 372 C 354 365 364 365 364 372 L 364 392 Z" />
     </g>
 
-    <!-- Open Quran / Holy Book Base -->
-    <path d="M 160 300 C 210 280 250 295 256 315 C 262 295 302 280 352 300 C 352 350 302 335 256 355 C 210 335 160 350 160 300 Z" fill="url(#goldGrad)" />
-    <path d="M 165 305 C 210 288 248 300 256 318 C 264 300 302 288 347 305 L 347 342 C 302 328 264 338 256 350 C 248 338 210 328 165 342 Z" fill="#ffffff" opacity="0.9" />
+    <!-- Upper Cornice Ring / Trim below Dome -->
+    <rect x="126" y="348" width="260" height="8" rx="2" fill="url(#goldGrad)" opacity="0.85" />
     
-    <!-- Spine Line -->
-    <line x1="256" y1="318" x2="256" y2="350" stroke="#064e3b" stroke-width="2.5" />
-  </g>
+    <!-- Blind Small Arches Row above Cornice -->
+    <g fill="none" stroke="#10b981" stroke-width="1.2" opacity="0.5">
+      <path d="M 134 348 C 134 338 148 338 148 348" />
+      <path d="M 148 348 C 148 338 162 338 162 348" />
+      <path d="M 162 348 C 162 338 176 338 176 348" />
+      <path d="M 176 348 C 176 338 190 338 190 348" />
+      <path d="M 190 348 C 190 338 204 338 204 348" />
+      <path d="M 204 348 C 204 338 218 338 218 348" />
+      <path d="M 218 348 C 218 338 232 338 232 348" />
+      <path d="M 232 348 C 232 338 246 338 246 348" />
+      <path d="M 246 348 C 246 338 260 338 260 348" />
+      <path d="M 260 348 C 260 338 274 338 274 348" />
+      <path d="M 274 348 C 274 338 288 338 288 348" />
+      <path d="M 288 348 C 288 338 302 338 302 348" />
+      <path d="M 302 348 C 302 338 316 338 316 348" />
+      <path d="M 316 348 C 316 338 330 330 330 348" />
+      <path d="M 330 348 C 330 338 344 338 344 348" />
+      <path d="M 344 348 C 344 338 358 338 358 348" />
+      <path d="M 358 348 C 358 338 372 338 372 348" />
+    </g>
 
-  <!-- Title Ribbon Text -->
-  <text x="256" y="425" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="28" fill="#fef08a" letter-spacing="3">KEUTAMAAN SHALAWAT</text>
-  <text x="256" y="455" text-anchor="middle" font-family="'Amiri', serif" font-weight="600" font-size="24" fill="#ffffff" opacity="0.9">ﷺ</text>
+    <!-- Main Green Dome Curved Shell (Authentic Nabawi Geometry) -->
+    <!-- Left Base (130, 348) -> Swelling out smoothly to (118, 250) -> Inwards & upwards smoothly to Pointed Top (256, 126) -> Symmetrical Right Base (382, 348) -->
+    <path d="M 130 348 C 114 275 142 195 256 126 C 370 195 398 275 382 348 Z" fill="url(#domeGrad)" />
+    
+    <!-- Volumetric Dome Overlay (Light Highlight & Shadow) -->
+    <path d="M 130 348 C 114 275 142 195 256 126 C 370 195 398 275 382 348 Z" fill="url(#domeShadow)" />
+
+    <!-- Subtle Vertical Rib Lines on Dome Surface -->
+    <g fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.18">
+      <path d="M 256 126 C 242 180 220 270 210 348" />
+      <path d="M 256 126 C 220 190 180 270 166 348" />
+      <path d="M 256 126 C 200 200 145 280 134 348" />
+      <path d="M 256 126 C 270 180 292 270 302 348" />
+      <path d="M 256 126 C 292 190 332 270 346 348" />
+      <path d="M 256 126 C 312 200 367 280 378 348" />
+      <line x1="256" y1="126" x2="256" y2="348" stroke="#ffffff" stroke-width="1.5" opacity="0.25" />
+    </g>
+
+    <!-- 6. THE GOLDEN PINNACLE & TIERED FINIAL (Mahkota Kubah Emas) -->
+    <g filter="url(#goldGlow)">
+      <!-- Golden Conical Base sitting on top of Dome -->
+      <path d="M 242 135 C 242 124 250 114 256 110 C 262 114 270 124 270 135 Z" fill="url(#goldGrad)" />
+      
+      <!-- Spire Shaft -->
+      <rect x="254" y="42" width="4" height="72" fill="url(#goldGrad)" />
+
+      <!-- Tier 1: Bottom Big Orb -->
+      <circle cx="256" cy="98" r="9" fill="url(#goldGrad)" />
+      
+      <!-- Tier 2: Middle Orb -->
+      <circle cx="256" cy="80" r="7.5" fill="url(#goldGrad)" />
+
+      <!-- Tier 3: Upper Small Orb -->
+      <circle cx="256" cy="64" r="6" fill="url(#goldGrad)" />
+
+      <!-- Top Finial: Upright Crescent Moon (Bulan Sabit Emas Puncak Nabawi) -->
+      <path d="M 256 34 A 12 12 0 0 0 256 56 A 10 10 0 0 1 256 38 A 12 12 0 0 0 256 34 Z" fill="url(#goldGrad)" />
+      <circle cx="256" cy="33" r="2.5" fill="#fffbeb" />
+    </g>
+
+  </g>
 </svg>

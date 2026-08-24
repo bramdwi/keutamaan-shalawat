@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-arabic: 'Amiri', 'Scheherazade New', 'Traditional Arabic', serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+.font-arabic {
+  font-family: 'Amiri', 'Scheherazade New', serif;
+  line-height: 2.2;
+  direction: rtl;
+  text-align: right;
+}
+
+.font-scheherazade {
+  font-family: 'Scheherazade New', 'Amiri', serif;
+  line-height: 2.3;
+  direction: rtl;
+  text-align: right;
+}
+
+/* Theme classes */
+body.theme-light {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+body.theme-sepia {
+  background-color: #fbf5e8;
+  color: #3b2a1a;
+}
+
+body.theme-dark {
+  background-color: #061e16;
+  color: #e2e8f0;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.45);
+}

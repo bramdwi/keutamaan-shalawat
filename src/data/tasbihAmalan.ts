@@ -17,19 +17,34 @@ export interface TasbihAmalan {
 export const tasbihAmalanList: TasbihAmalan[] = [
   // 1. KATEGORI: HARI JUMAT
   {
-    id: 'wirid-jumat-80',
-    name: 'Wirid Jumat 80x Ba\'da Ashar',
+    id: 'wirid-jumat-80-hadits',
+    name: 'Wirid Jumat 80x (Riwayat Hadits)',
     category: 'jumat',
     categoryLabel: 'Hari Jumat',
-    badge: '80x Ba\'da Ashar',
+    badge: '80x Riwayat Hadits',
     defaultTarget: 80,
-    arabic: 'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ النَّبِيِّ الأُمِّيِّ وَعَلَى آلِهِ وَسَلِّمْ تَسْلِيمًا',
-    latin: 'Allāhumma ṣalli \'alā Muḥammadin-nabiyyil-ummiyyi wa \'alā ālihī wa sallim taslīmā',
-    translation: 'Ya Allah, limpahkanlah sholawat kepada Nabi Muhammad, Nabi yang ummi, dan kepada keluarganya, serta curahkanlah salam penghormatan kepadanya.',
-    fadhilah: 'Diampuni dosa-dosa selama 80 tahun dan dicatat baginya pahala ibadah selama 80 tahun. Merupakan wirid istiqamah Syaikhul Hadits Maulana Zakariya selama 30 tahun setiap selesai shalat Ashar pada hari Jumat sebelum beranjak dari tempat duduknya.',
-    source: 'Bab II: Pasal 4 (Hadits 4)',
+    arabic: 'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ عَبْدِكَ وَنَبِيِّكَ وَرَسُولِكَ النَّبِيِّ الأُمِّيِّ',
+    latin: 'Allāhumma ṣalli \'alā Muḥammadin \'abdika wa nabiyyika wa rasūlikan-nabiyyil-ummiyy',
+    translation: 'Ya Allah, limpahkanlah sholawat kepada Nabi Muhammad, hamba-Mu, Nabi-Mu, dan Rasul-Mu, Nabi yang ummi.',
+    fadhilah: 'Rasulullah ﷺ bersabda: "Bersholawat kepadaku adalah cahaya di atas jembatan Shirath, dan barangsiapa bersholawat kepadaku pada hari Jumat sebanyak 80 kali seusai shalat Ashar sebelum beranjak dari tempat duduknya, maka diampuni baginya dosa-dosa selama 80 tahun dan dicatat baginya pahala ibadah selama 80 tahun."',
+    source: 'Bab II: Pasal 5 (Hadits 4)',
     targetChapterId: 'bab-2',
-    targetSectionId: 'bab2-sec-4'
+    targetSectionId: 'bab2-sec-5'
+  },
+  {
+    id: 'wirid-jumat-80-zakariya',
+    name: 'Wirid Jumat 80x (Maulana Zakariya)',
+    category: 'jumat',
+    categoryLabel: 'Hari Jumat',
+    badge: '80x Istiqamah Penulis',
+    defaultTarget: 80,
+    arabic: 'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الأُمِّيِّ وَعَلَى آلِهِ وَسَلِّمْ تَسْلِيمًا',
+    latin: 'Allāhumma ṣalli \'alā sayyidinā Muḥammadin-nabiyyil-ummiyyi wa \'alā ālihī wa sallim taslīmā',
+    translation: 'Ya Allah, limpahkanlah sholawat kepada junjungan kami Nabi Muhammad, Nabi yang ummi, dan kepada keluarganya, serta curahkanlah salam penghormatan kepadanya.',
+    fadhilah: 'Wirid istiqamah yang secara konsisten diamalkan selama 25-30 tahun oleh pengarang risalah ini, Syaikhul Hadits Maulana Muhammad Zakariya Kandhlawi Muhajir Madani, setiap selesai shalat Ashar pada hari Jumat sebelum beranjak dari tempat duduknya.',
+    source: 'Khatimah: Pasal 6',
+    targetChapterId: 'khatimah',
+    targetSectionId: 'khatimah-sec-6'
   },
   {
     id: 'wirid-jumat-1000',

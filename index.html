@@ -13,7 +13,7 @@
     <meta name="publisher" content="Abu Basyir, Jakarta" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <link rel="canonical" href="https://keutamaan-shalawat.web.app/" />
+    <link rel="canonical" href="https://keutamaan-shalawat.vercel.app/" />
     <meta name="google-site-verification" content="googleb02ddcde2a0c21d2" />
 
     <!-- Open Graph (Facebook, WhatsApp, LinkedIn, Telegram) -->
@@ -21,19 +21,19 @@
     <meta property="og:site_name" content="Keutamaan Shalawat ﷺ" />
     <meta property="og:title" content="Keutamaan Shalawat ﷺ - Risalah Fadhilah, Khasiat & 50 Kisah Hadits Nabi" />
     <meta property="og:description" content="Aplikasi Kitab Fadhail Shalawat karya Maulana Muhammad Zakariya Kandhlawi. Lengkap dengan teks Arab berharakat, transliterasi Latin, Terjemahan, 50 Kisah Nyata, dan Tasbih Digital." />
-    <meta property="og:image" content="https://keutamaan-shalawat.web.app/og-image.png" />
+    <meta property="og:image" content="https://keutamaan-shalawat.vercel.app/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:alt" content="Cover Digital Kitab Keutamaan Shalawat Nabi ﷺ" />
-    <meta property="og:url" content="https://keutamaan-shalawat.web.app/" />
+    <meta property="og:url" content="https://keutamaan-shalawat.vercel.app/" />
     <meta property="og:locale" content="id_ID" />
 
     <!-- Twitter Cards (X) -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Keutamaan Shalawat ﷺ - Risalah Fadhilah & 50 Kisah" />
     <meta name="twitter:description" content="Risalah Hadits Fadhail Shalawat Nabi ﷺ lengkap dengan teks Arab berharakat, faedah, kisah hikayat, dan tasbih digital offline." />
-    <meta name="twitter:image" content="https://keutamaan-shalawat.web.app/og-image.png" />
+    <meta name="twitter:image" content="https://keutamaan-shalawat.vercel.app/og-image.png" />
     <meta name="twitter:image:alt" content="Cover Digital Kitab Keutamaan Shalawat Nabi ﷺ" />
 
     <!-- PWA, Theme & Mobile Standalone App Meta Tags -->
@@ -51,19 +51,21 @@
     <link rel="icon" type="image/png" sizes="192x192" href="/pwa-192x192.png" />
     <link rel="icon" type="image/png" sizes="512x512" href="/pwa-512x512.png" />
 
-    <!-- Google Fonts: Arabic (Amiri, Scheherazade New) & Latin (Plus Jakarta Sans) -->
+    <!-- DNS Prefetch & Preconnect for Performance Optimization -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Scheherazade+New:wght@400;600;700&display=swap" rel="stylesheet" />
 
-    <!-- Structured Data: Schema.org (Book, WebApplication, FAQPage, BreadcrumbList) -->
+    <!-- Structured Data: Schema.org (Book, WebApplication, FAQPage, BreadcrumbList, Speakable) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
           "@type": "Book",
-          "@id": "https://keutamaan-shalawat.web.app/#book",
+          "@id": "https://keutamaan-shalawat.vercel.app/#book",
           "name": "Keutamaan Shalawat ﷺ (Fadhail Shalawat)",
           "headline": "Risalah Fadhilah, Khasiat, Adab, Hikayat, dan Untaian Syair Shalawat Nabi ﷺ",
           "description": "Kitab induk kumpulan hadits keutamaan bershalawat atas Nabi Muhammad ﷺ, peringatan bagi yang lalai, lafadz-lafadz khusus shalawat, dan 50 kisah hikayat teladan.",
@@ -78,55 +80,55 @@
           },
           "inLanguage": ["id", "ar"],
           "genre": "Hadith, Islamic Spirituality, Fadhail A'mal",
-          "url": "https://keutamaan-shalawat.web.app/",
+          "url": "https://keutamaan-shalawat.vercel.app/",
           "hasPart": [
             {
               "@type": "Chapter",
               "name": "Mukadimah & Latar Belakang Penulisan Fadhail Shalawat",
               "position": 1,
-              "url": "https://keutamaan-shalawat.web.app/#mukadimah"
+              "url": "https://keutamaan-shalawat.vercel.app/?bab=mukadimah"
             },
             {
               "@type": "Chapter",
               "name": "Bab I: Fadhilah & Keutamaan Bershalawat",
               "position": 2,
-              "url": "https://keutamaan-shalawat.web.app/#bab-1"
+              "url": "https://keutamaan-shalawat.vercel.app/?bab=bab-1"
             },
             {
               "@type": "Chapter",
               "name": "Bab II: Lafadz-Lafadz Khusus Shalawat Nabi ﷺ Beserta Keutamaannya",
               "position": 3,
-              "url": "https://keutamaan-shalawat.web.app/#bab-2"
+              "url": "https://keutamaan-shalawat.vercel.app/?bab=bab-2"
             },
             {
               "@type": "Chapter",
               "name": "Bab III: Ancaman & Kerugian Bagi Orang yang Enggan Bershalawat",
               "position": 4,
-              "url": "https://keutamaan-shalawat.web.app/#bab-3"
+              "url": "https://keutamaan-shalawat.vercel.app/?bab=bab-3"
             },
             {
               "@type": "Chapter",
               "name": "Bab IV: Faedah, Khasiat & Manfaat Bershalawat",
               "position": 5,
-              "url": "https://keutamaan-shalawat.web.app/#bab-4"
+              "url": "https://keutamaan-shalawat.vercel.app/?bab=bab-4"
             },
             {
               "@type": "Chapter",
               "name": "Bab V: 50 Kisah & Hikayat Teladan Shalawat",
               "position": 6,
-              "url": "https://keutamaan-shalawat.web.app/#bab-5"
+              "url": "https://keutamaan-shalawat.vercel.app/?bab=bab-5"
             },
             {
               "@type": "Chapter",
               "name": "Khatimah: Penutup & Untaian Bait Syair Shalawat",
               "position": 7,
-              "url": "https://keutamaan-shalawat.web.app/#khatimah"
+              "url": "https://keutamaan-shalawat.vercel.app/?bab=khatimah"
             }
           ]
         },
         {
           "@type": "WebApplication",
-          "@id": "https://keutamaan-shalawat.web.app/#app",
+          "@id": "https://keutamaan-shalawat.vercel.app/#app",
           "name": "Keutamaan Shalawat ﷺ PWA",
           "applicationCategory": "ReferenceApplication",
           "operatingSystem": "All",
@@ -146,7 +148,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://keutamaan-shalawat.web.app/#faq",
+          "@id": "https://keutamaan-shalawat.vercel.app/#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -184,19 +186,19 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://keutamaan-shalawat.web.app/#breadcrumb",
+          "@id": "https://keutamaan-shalawat.vercel.app/#breadcrumb",
           "itemListElement": [
             {
               "@type": "ListItem",
               "position": 1,
               "name": "Beranda",
-              "item": "https://keutamaan-shalawat.web.app/"
+              "item": "https://keutamaan-shalawat.vercel.app/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Kitab Fadhail Shalawat",
-              "item": "https://keutamaan-shalawat.web.app/#bab-1"
+              "item": "https://keutamaan-shalawat.vercel.app/?bab=bab-1"
             }
           ]
         }
@@ -206,7 +208,7 @@
   </head>
   <body class="antialiased selection:bg-emerald-700 selection:text-white transition-colors duration-200">
     <div id="root">
-      <!-- Pre-rendered Semantic SEO Content for Search Engine Bots & Crawlers (Googlebot, Bingbot) -->
+      <!-- Pre-rendered Semantic SEO Content for Search Engine Bots & Crawlers (Googlebot, Bingbot, GPTBot, Perplexity) -->
       <header style="padding: 24px; text-align: center; background-color: #064e3b; color: #ffffff;">
         <h1 style="font-size: 26px; margin-bottom: 8px;">Keutamaan Shalawat ﷺ (Fadhail Shalawat)</h1>
         <p style="font-size: 14px; opacity: 0.9;">Risalah Fadhilah, Khasiat, Adab, Hikayat, dan Untaian Syair Shalawat Nabi ﷺ</p>
@@ -217,10 +219,10 @@
         <section>
           <h2>Daftar Isi Bab Kitab Keutamaan Shalawat</h2>
           <ul>
-            <li><strong>Mukadimah</strong>: Latar Belakang Penulisan Fadhail Shalawat di Madinah Munawwarah.</li>
-            <li><strong>Bab I</strong>: Fadhilah & Keutamaan Bershalawat atas Nabi ﷺ (Ganjaran 10 rahmat, ampunan 10 dosa, dan 10 derajat).</li>
+            <li><strong>Mukadimah</strong>: Latar Belakang Penulisan Fadhail Shalawat di Raudhah Madinah Munawwarah.</li>
+            <li><strong>Bab I</strong>: Fadhilah & Keutamaan Bershalawat atas Nabi ﷺ (10 rahmat, 10 ampunan dosa, 10 derajat).</li>
             <li><strong>Bab II</strong>: Lafadz-Lafadz Khusus Shalawat Nabi ﷺ Beserta Keutamaannya.</li>
-            <li><strong>Bab III</strong>: Ancaman & Peringatan Bagi Orang yang Enggan Bershalawat.</li>
+            <li><strong>Bab III</strong>: Ancaman & Peringatan Bagi Orang yang Enggan Bershalawat Saat Nama Nabi Disebut.</li>
             <li><strong>Bab IV</strong>: Faedah, Manfaat & Khasiat Bershalawat di Dunia dan Akhirat.</li>
             <li><strong>Bab V</strong>: 50 Kisah & Hikayat Teladan Penuh Berkah Seputar Shalawat.</li>
             <li><strong>Khatimah</strong>: Penutup & Untaian Bait Syair Kerinduan kepada Rasulullah ﷺ.</li>

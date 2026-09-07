@@ -17,8 +17,20 @@ import { AboutModal } from './components/AboutModal';
 import { Toast } from './components/Toast';
 import type { ToastMessage } from './components/Toast';
 
-function parseHash(): { chapterId?: string; sectionId?: string } {
+function parseLocation(): { chapterId?: string; sectionId?: string } {
   if (typeof window === 'undefined') return {};
+  // 1. Prioritaskan query param ?bab= (digunakan oleh Google Sitemaps)
+  try {
+    const searchParams = new URLSearchParams(window.location.search);
+    const babParam = searchParams.get('bab');
+    if (babParam) {
+      return { chapterId: babParam };
+    }
+  } catch {
+    // Abaikan jika env lama
+  }
+
+  // 2. Baca dari URL hash #bab-1/sectionId
   const hash = window.location.hash.replace(/^#/, '');
   if (!hash) return {};
   const parts = hash.split('/');
@@ -43,16 +55,16 @@ export function App() {
   const { triggerInstall, isInstalled } = usePWAInstall();
 
   const [activeChapterId, setActiveChapterId] = useState<string>(() => {
-    const hashData = parseHash();
-    if (hashData.chapterId && getChapterById(hashData.chapterId)) {
-      return hashData.chapterId;
+    const locData = parseLocation();
+    if (locData.chapterId && getChapterById(locData.chapterId)) {
+      return locData.chapterId;
     }
     return lastRead?.chapterId || 'bab-1';
   });
 
   const [targetSectionId, setTargetSectionId] = useState<string | undefined>(() => {
-    const hashData = parseHash();
-    return hashData.sectionId;
+    const locData = parseLocation();
+    return locData.sectionId;
   });
 
   // Modals state
@@ -86,18 +98,22 @@ export function App() {
   // Dynamic SEO Synchronization
   useSEO({ chapter: currentChapter, targetSectionId });
 
-  // Listen to browser navigation (back/forward or hash change)
+  // Listen to browser navigation (back/forward, hash change, atau URL query)
   useEffect(() => {
-    const handleHashChange = () => {
-      const { chapterId, sectionId } = parseHash();
+    const handleNavigation = () => {
+      const { chapterId, sectionId } = parseLocation();
       if (chapterId && getChapterById(chapterId)) {
         setActiveChapterId(chapterId);
         setTargetSectionId(sectionId);
       }
     };
 
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    window.addEventListener('hashchange', handleNavigation);
+    window.addEventListener('popstate', handleNavigation);
+    return () => {
+      window.removeEventListener('hashchange', handleNavigation);
+      window.removeEventListener('popstate', handleNavigation);
+    };
   }, []);
 
   const handleSelectChapter = (chapterId: string) => {

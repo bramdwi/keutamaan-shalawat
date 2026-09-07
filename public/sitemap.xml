@@ -3,17 +3,17 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- Halaman Beranda Utama -->
+  <!-- Halaman Utama & Beranda Kitab -->
   <url>
-    <loc>https://keutamaan-shalawat.web.app/</loc>
+    <loc>https://keutamaan-shalawat.vercel.app/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Mukadimah & Latar Belakang Penulisan -->
+  <!-- Mukadimah: Latar Belakang & Wasiat Penulisan Fadhail Shalawat -->
   <url>
-    <loc>https://keutamaan-shalawat.web.app/#mukadimah</loc>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=mukadimah</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -21,7 +21,7 @@
 
   <!-- Bab I: Keutamaan & Fadhilah Membaca Shalawat -->
   <url>
-    <loc>https://keutamaan-shalawat.web.app/#bab-1</loc>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
@@ -29,7 +29,7 @@
 
   <!-- Bab II: Lafadz-Lafadz Khusus Shalawat Nabi & Keutamaannya -->
   <url>
-    <loc>https://keutamaan-shalawat.web.app/#bab-2</loc>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
@@ -37,31 +37,31 @@
 
   <!-- Bab III: Ancaman & Kerugian Bagi yang Enggan Bershalawat -->
   <url>
-    <loc>https://keutamaan-shalawat.web.app/#bab-3</loc>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-3</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Bab IV: Faedah, Manfaat & Khasiat Bershalawat -->
+  <!-- Bab IV: Faedah, Manfaat & Khasiat Bershalawat di Dunia & Akhirat -->
   <url>
-    <loc>https://keutamaan-shalawat.web.app/#bab-4</loc>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-4</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Bab V: 50 Kisah & Hikayat Teladan Shalawat -->
+  <!-- Bab V: 50 Kisah & Hikayat Teladan Berkah Shalawat -->
   <url>
-    <loc>https://keutamaan-shalawat.web.app/#bab-5</loc>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
 
-  <!-- Khatimah: Penutup & Untaian Bait Syair Shalawat -->
+  <!-- Khatimah: Penutup & Untaian Bait Syair Kerinduan kepada Rasulullah ﷺ -->
   <url>
-    <loc>https://keutamaan-shalawat.web.app/#khatimah</loc>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=khatimah</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>

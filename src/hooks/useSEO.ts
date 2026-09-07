@@ -6,10 +6,10 @@ interface UseSEOOptions {
   targetSectionId?: string;
 }
 
-const DEFAULT_TITLE = 'Keutamaan Shalawat ﷺ - Risalah Fadhilah, Khasiat & 50 Kisah Teladan';
+const DEFAULT_TITLE = 'Keutamaan Shalawat ﷺ - Risalah Fadhilah, Khasiat & 50 Kisah Hadits Nabi';
 const DEFAULT_DESC =
-  'Aplikasi PWA Kitab Fadhail Shalawat karya Syaikhul Hadits Maulana Muhammad Zakariya Kandhlawi. Memuat hadits fadhilah shalawat, ancaman enggan bershalawat, lafadz khusus, 50 kisah teladan, dan tasbih digital offline.';
-const BASE_URL = 'https://keutamaan-shalawat.web.app';
+  'Aplikasi PWA Kitab Fadhail Shalawat karya Syaikhul Hadits Maulana Muhammad Zakariya Kandhlawi. Memuat hadits keutamaan membaca shalawat nabi, ancaman enggan bershalawat, lafadz khusus, 50 kisah teladan, dan tasbih digital offline.';
+const BASE_URL = 'https://keutamaan-shalawat.vercel.app';
 
 export function useSEO({ chapter, targetSectionId }: UseSEOOptions) {
   useEffect(() => {
@@ -30,9 +30,9 @@ export function useSEO({ chapter, targetSectionId }: UseSEOOptions) {
       metaDesc.setAttribute('content', descContent);
     }
 
-    // 3. Update Canonical URL
-    const canonicalUrl = chapter
-      ? `${BASE_URL}/#${chapter.id}${targetSectionId ? `/${targetSectionId}` : ''}`
+    // 3. Update Canonical URL (Menggunakan query param ramah Googlebot)
+    const canonicalUrl = chapter && chapter.id !== 'bab-1'
+      ? `${BASE_URL}/?bab=${chapter.id}`
       : `${BASE_URL}/`;
 
     let linkCanonical = document.querySelector('link[rel="canonical"]');
@@ -60,7 +60,7 @@ export function useSEO({ chapter, targetSectionId }: UseSEOOptions) {
     const twDesc = document.querySelector('meta[name="twitter:description"]');
     if (twDesc) twDesc.setAttribute('content', descContent);
 
-    // 6. Sinkronisasi URL Hash secara halus
+    // 6. Sinkronisasi URL Hash atau Search Param secara halus tanpa reload
     if (chapter) {
       const newHash = targetSectionId ? `#${chapter.id}/${targetSectionId}` : `#${chapter.id}`;
       if (window.location.hash !== newHash) {

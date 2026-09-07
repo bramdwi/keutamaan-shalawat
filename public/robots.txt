@@ -1,0 +1,22 @@
+# Robots.txt untuk WebApp Keutamaan Shalawat ﷺ
+User-agent: *
+Allow: /
+
+# Directives untuk bot pengindeks
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Peta Situs
+Sitemap: https://keutamaan-shalawat.web.app/sitemap.xml

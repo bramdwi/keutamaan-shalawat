@@ -76,7 +76,13 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
     }
   };
 
+  const getSectionDeepLink = (sectionId: string) => {
+    if (typeof window === 'undefined') return '';
+    return `${window.location.origin}/#${chapter.id}/${sectionId}`;
+  };
+
   const handleCopyText = (section: SectionItem) => {
+    const deepLink = getSectionDeepLink(section.id);
     let textToCopy = `📖 ${section.title}\n\n`;
     if (section.arabic) {
       textToCopy += `${section.arabic}\n\n`;
@@ -88,30 +94,47 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
       textToCopy += `Artinya: "${section.translation}"\n\n`;
     }
     if (section.narrator) {
-      textToCopy += `📚 Riwayat: ${section.narrator}\n`;
+      textToCopy += `📚 Riwayat: ${section.narrator}\n\n`;
     }
-    textToCopy += `\n(Disalin dari Aplikasi PWA Keutamaan Shalawat ﷺ)`;
+    textToCopy += `🔗 Baca selengkapnya:\n${deepLink}\n\n(Disalin dari Aplikasi PWA Keutamaan Shalawat ﷺ)`;
 
     navigator.clipboard.writeText(textToCopy);
     setCopiedId(section.id);
-    onShowToast('Teks hadits & faedah berhasil disalin', 'success');
+    onShowToast('Teks hadits beserta tautan berhasil disalin', 'success');
     setTimeout(() => setCopiedId(null), 2500);
   };
 
-  const handleShareWhatsApp = (section: SectionItem) => {
-    let shareText = `*${chapter.title}*\n_${section.title}_\n\n`;
+  const handleShare = async (section: SectionItem) => {
+    const deepLink = getSectionDeepLink(section.id);
+    let shareContent = `*${chapter.title}*\n_${section.title}_\n\n`;
     if (section.arabic) {
-      shareText += `${section.arabic}\n\n`;
+      shareContent += `${section.arabic}\n\n`;
     }
     if (section.translation) {
-      shareText += `"${section.translation}"\n\n`;
+      shareContent += `"${section.translation}"\n\n`;
     }
     if (section.narrator) {
-      shareText += `📚 *Riwayat:* ${section.narrator}\n`;
+      shareContent += `📚 *Riwayat:* ${section.narrator}\n\n`;
     }
-    shareText += `\n_Aplikasi PWA Keutamaan Shalawat ﷺ_`;
+    shareContent += `🔗 *Baca di WebApp:* ${deepLink}\n\n_Aplikasi PWA Keutamaan Shalawat ﷺ_`;
 
-    const url = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: `${section.title} - Keutamaan Shalawat ﷺ`,
+          text: shareContent,
+          url: deepLink
+        });
+        onShowToast('Berhasil dibagikan', 'success');
+        return;
+      } catch (err: unknown) {
+        // Jika dibatalkan user (AbortError), jangan fallback ke WhatsApp
+        if ((err as Error)?.name === 'AbortError') return;
+      }
+    }
+
+    // Fallback untuk desktop / browser tanpa navigator.share: Buka WhatsApp
+    const url = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareContent)}`;
     window.open(url, '_blank');
   };
 
@@ -234,9 +257,9 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
                     </button>
 
                     <button
-                      onClick={() => handleShareWhatsApp(section)}
-                      title="Bagikan ke WhatsApp"
-                      aria-label="Bagikan ke WhatsApp"
+                      onClick={() => handleShare(section)}
+                      title="Bagikan Hadits & Tautan"
+                      aria-label="Bagikan Hadits & Tautan"
                       className="p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 active:scale-95 transition-all text-xs opacity-75 hover:opacity-100"
                     >
                       <Share2 className="w-4 h-4" />

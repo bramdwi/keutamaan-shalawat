@@ -5,6 +5,7 @@ import { useLastRead } from './hooks/useLastRead';
 import { usePWAInstall } from './hooks/usePWAInstall';
 import { getChapterById, allChapters } from './data/chapters';
 import type { SectionItem } from './types';
+import { useSEO } from './hooks/useSEO';
 import { Header } from './components/Header';
 import { SidebarDrawer } from './components/SidebarDrawer';
 import { ChapterReader } from './components/ChapterReader';
@@ -15,6 +16,17 @@ import { BookmarksModal } from './components/BookmarksModal';
 import { AboutModal } from './components/AboutModal';
 import { Toast } from './components/Toast';
 import type { ToastMessage } from './components/Toast';
+
+function parseHash(): { chapterId?: string; sectionId?: string } {
+  if (typeof window === 'undefined') return {};
+  const hash = window.location.hash.replace(/^#/, '');
+  if (!hash) return {};
+  const parts = hash.split('/');
+  return {
+    chapterId: parts[0] || undefined,
+    sectionId: parts[1] || undefined
+  };
+}
 
 export function App() {
   const {
@@ -31,9 +43,17 @@ export function App() {
   const { triggerInstall, isInstalled } = usePWAInstall();
 
   const [activeChapterId, setActiveChapterId] = useState<string>(() => {
+    const hashData = parseHash();
+    if (hashData.chapterId && getChapterById(hashData.chapterId)) {
+      return hashData.chapterId;
+    }
     return lastRead?.chapterId || 'bab-1';
   });
-  const [targetSectionId, setTargetSectionId] = useState<string | undefined>(undefined);
+
+  const [targetSectionId, setTargetSectionId] = useState<string | undefined>(() => {
+    const hashData = parseHash();
+    return hashData.sectionId;
+  });
 
   // Modals state
   const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
@@ -62,6 +82,23 @@ export function App() {
   }, [activeChapterId, targetSectionId]);
 
   const currentChapter = getChapterById(activeChapterId) || allChapters[0];
+
+  // Dynamic SEO Synchronization
+  useSEO({ chapter: currentChapter, targetSectionId });
+
+  // Listen to browser navigation (back/forward or hash change)
+  useEffect(() => {
+    const handleHashChange = () => {
+      const { chapterId, sectionId } = parseHash();
+      if (chapterId && getChapterById(chapterId)) {
+        setActiveChapterId(chapterId);
+        setTargetSectionId(sectionId);
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
 
   const handleSelectChapter = (chapterId: string) => {
     setTargetSectionId(undefined);

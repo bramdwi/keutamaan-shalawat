@@ -78,7 +78,7 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
 
   const getSectionDeepLink = (sectionId: string) => {
     if (typeof window === 'undefined') return '';
-    return `${window.location.origin}/#${chapter.id}/${sectionId}`;
+    return `${window.location.origin}/?bab=${chapter.id}&sec=${sectionId}`;
   };
 
   const handleCopyText = (section: SectionItem) => {

@@ -13,27 +13,43 @@ const BASE_URL = 'https://keutamaan-shalawat.vercel.app';
 
 export function useSEO({ chapter, targetSectionId }: UseSEOOptions) {
   useEffect(() => {
+    // Cari section aktif jika targetSectionId ada
+    const targetSection = chapter?.sections.find((s) => s.id === targetSectionId);
+
     // 1. Update Title
     let pageTitle = DEFAULT_TITLE;
-    if (chapter) {
+    if (targetSection && chapter) {
+      pageTitle = `${targetSection.title} | ${chapter.title} - Keutamaan Shalawat ﷺ`;
+    } else if (chapter) {
       pageTitle = `${chapter.title} | Keutamaan Shalawat ﷺ`;
     }
     document.title = pageTitle;
 
     // 2. Update Description
     const metaDesc = document.querySelector('meta[name="description"]');
-    const descContent = chapter?.description
-      ? `${chapter.description} - Dari Kitab Fadhail Shalawat karya Maulana Muhammad Zakariya Kandhlawi.`
-      : DEFAULT_DESC;
+    let descContent = DEFAULT_DESC;
+    if (targetSection) {
+      const snippet = targetSection.translation
+        ? targetSection.translation.replace(/\n+/g, ' ').slice(0, 160)
+        : targetSection.title;
+      descContent = `${targetSection.title}: "${snippet}..." - Dari Kitab Fadhail Shalawat karya Maulana Muhammad Zakariya Kandhlawi.`;
+    } else if (chapter?.description) {
+      descContent = `${chapter.description} - Dari Kitab Fadhail Shalawat karya Maulana Muhammad Zakariya Kandhlawi.`;
+    }
 
     if (metaDesc) {
       metaDesc.setAttribute('content', descContent);
     }
 
-    // 3. Update Canonical URL (Menggunakan query param ramah Googlebot)
-    const canonicalUrl = chapter && chapter.id !== 'bab-1'
-      ? `${BASE_URL}/?bab=${chapter.id}`
-      : `${BASE_URL}/`;
+    // 3. Update Canonical URL (Query param bersih untuk bab dan subtitle hadits)
+    let canonicalUrl = `${BASE_URL}/`;
+    if (chapter) {
+      if (targetSectionId) {
+        canonicalUrl = `${BASE_URL}/?bab=${chapter.id}&sec=${targetSectionId}`;
+      } else if (chapter.id !== 'bab-1') {
+        canonicalUrl = `${BASE_URL}/?bab=${chapter.id}`;
+      }
+    }
 
     let linkCanonical = document.querySelector('link[rel="canonical"]');
     if (!linkCanonical) {

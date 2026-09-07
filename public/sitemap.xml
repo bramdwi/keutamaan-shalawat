@@ -3,7 +3,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- Halaman Utama & Beranda Kitab -->
+  <!-- 1. Halaman Utama / Beranda Kitab Keutamaan Shalawat -->
   <url>
     <loc>https://keutamaan-shalawat.vercel.app/</loc>
     <lastmod>2026-09-08</lastmod>
@@ -11,12 +11,40 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Mukadimah: Latar Belakang & Wasiat Penulisan Fadhail Shalawat -->
+  <!-- Mukadimah & Latar Belakang Risalah -->
   <url>
     <loc>https://keutamaan-shalawat.vercel.app/?bab=mukadimah</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
+  </url>
+  <!-- Subtitle: Informasi Kitab &amp; Shalawat Pembuka -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=mukadimah&amp;sec=mukadimah-sec-1</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Khutbah Pembuka &amp; Hakikat Keberkahan Silsilah Fadhail -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=mukadimah&amp;sec=mukadimah-sec-2</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Wasiat Agung Syaikh Syah Muhammad Yasin Neginawi -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=mukadimah&amp;sec=mukadimah-sec-3</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Panggilan Batin di Madinah &amp; Awal Penulisan di Hari Jumat Ramadhan -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=mukadimah&amp;sec=mukadimah-sec-4</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <!-- Bab I: Keutamaan & Fadhilah Membaca Shalawat -->
@@ -26,13 +54,321 @@
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
+  <!-- Subtitle: Ayat Pertama: Perintah Agung Allah ﷻ untuk Bersholawat -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-1</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Rahasia Bahasa: Taukid Inna &amp; Fi&apos;il Mudhari&apos; Yushalluna -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-2</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Makna Kata Sholat yang Disandarkan kepada Allah, Malaikat, dan Manusia -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-3</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hikmah Mengucapkan &quot;Allahumma Shalli &apos;ala Muhammad&quot; (Menepis Syubhat Kaum Awam) -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-4</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Tanda Cinta Ahlus Sunnah &amp; Pelajaran Berharga dari Pria di Shan&apos;a (Yaman) -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-5</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Ayat Kedua: Salam Sejahtera Atas Hamba-Hamba Pilihan-Nya -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-6</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 3: Balasan Sepuluh Kali Sholawat &amp; Rahasia Lipatan Pahala -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-7</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 4: Penghapusan 10 Dosa, Pengangkatan 10 Derajat &amp; Sujud Syukur Nabi ﷺ -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-8</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Pelajaran dari Syaikh Thanwi: Sepuluh Celaan bagi Pencela Rasulullah ﷺ -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-9</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 5: Manusia yang Paling Utama Bersama Nabi ﷺ di Hari Kiamat -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-10</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Fadhilah Khusus bagi Ahli Hadits &amp; Standar Minimal 300 Sholawat Harian -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-11</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 6: Malaikat-Malaikat Pengembara (Sayyahin) Penyampai Salam -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-12</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 7: Malaikat Khusus di Makam yang Menghaturkan Nama &amp; Nama Ayah -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-13</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 8: Sholawat di Sisi Makam Didengar Langsung oleh Baginda Nabi ﷺ -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-14</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kehidupan Para Nabi di Alam Kubur (Hayatul Anbiya) -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-15</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Untaian Lafadz Salam Lengkap di Hadapan Makam Rasulullah ﷺ di Raudhah -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-16</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Doa Tawasul di Sisi Makam Nabi ﷺ Berdasarkan QS. An-Nisa: 64 -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-17</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 9: Menjadikan Seluruh Waktu Doa untuk Bersholawat (Kisah Ubay bin Ka&apos;ab) -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-18</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 10: Jaminan Syafaat bagi Pembaca Sholawat 10 Kali Pagi dan Petang -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-19</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 11: Sholawat yang Diangkat ke Haribaan Ar-Rahman &amp; Haditsul Bithaqah -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-20</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 12: Sholawat sebagai Sedekah dan Zakat bagi yang Tidak Berharta -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-21</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Takmilah: Rangkuman 44+ Keutamaan Sholawat oleh Al-Allamah As-Sakhawi -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-22</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Untaian Hikmah Imam Al-Iqlisyi: Perniagaan Abadi Sholawat -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-1&amp;sec=bab1-sec-23</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
 
-  <!-- Bab II: Lafadz-Lafadz Khusus Shalawat Nabi & Keutamaannya -->
+  <!-- Bab II: Lafadz-Lafadz Khusus Shalawat & Keutamaannya -->
   <url>
     <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
+  </url>
+  <!-- Subtitle: Hadits 1: Sholawat Ibrahimiyah (Hadiah Teragung &amp; Paling Afdhal dalam Shalat) -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-1</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Tiga Faedah Balaghah Sholawat Ibrahimiyah &amp; Rahasia Penyerupaan dengan Nabi Ibrahim AS -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-2</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 2: Sholawat Penimbang Takaran Paling Sempurna (Al-Mikyālul Aufā) -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-3</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 3: Keutamaan Sholawat Hari Jumat &amp; Bumi Diharamkan Memakan Jasad Para Nabi -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-4</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 4: Sholawat 80 Kali Seusai Ashar Hari Jumat Diampuni Dosa 80 Tahun -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-5</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 5: Doa Memohon Kedudukan Dekat (Al-Maq&apos;adul Muqarrab) &amp; Kepastian Syafaat -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-6</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 6: Doa &quot;Jazallahu &apos;Anna Muhammadan Ma Huwa Ahluh&quot; - 70 Malaikat Mencatat 1.000 Hari -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-7</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 7: Sholawat &amp; Permohonan Al-Wasilah Seusai Menjawab Adzan -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-8</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 8: Sholawat &amp; Doa Masuk Serta Keluar Masjid -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-9</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Bimbingan Ruhani &amp; Amalan Mujarab Bermimpi Menatap Wajah Suci Rasulullah ﷺ -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-10</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Dua Peringatan Penting Mengenai Hakikat Mimpi Berjumpa Rasulullah ﷺ -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-11</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Arba&apos;in Sholawat &amp; Salam: 2 Ayat Pembuka &amp; Sholawat 1 - 5 -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-12</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Arba&apos;in Sholawat: Lafadz 6 - 10 -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-13</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Arba&apos;in Sholawat: Lafadz 11 - 15 (Termasuk Sholawat untuk Istri &amp; Dzurriyah) -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-14</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Arba&apos;in Sholawat: Lafadz 16 - 20 (Lafadz Sholawat, Tarahhum, Tahannun &amp; Salam) -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-15</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Arba&apos;in Sholawat: Lafadz 21 - 25 -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-16</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Arba&apos;in Salam: Lafadz Tasyahhud &amp; Salam Nabawiyyah 26 - 30 -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-17</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Arba&apos;in Salam: Lafadz Tasyahhud &amp; Salam Nabawiyyah 31 - 35 -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-18</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Arba&apos;in Salam: Lafadz Tasyahhud &amp; Salam Nabawiyyah 36 - 40 -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-19</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Takmilah: Daftar Waktu, Tempat, dan Keadaan Khusus yang Dianjurkan Bersholawat -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-20</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Tujuh Keadaan yang Dimakruhkan Membaca Sholawat Menurut Fukaha -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-2&amp;sec=bab2-sec-21</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <!-- Bab III: Ancaman & Kerugian Bagi yang Enggan Bershalawat -->
@@ -40,15 +376,113 @@
     <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-3</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
+  </url>
+  <!-- Subtitle: Hadits 1: Doa Tiga Tingkat Mimbar Malaikat Jibril AS yang Diaminkan Rasulullah ﷺ -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-3&amp;sec=bab3-sec-1</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Sembilan Ancaman Bagi Orang yang Enggan Bersholawat Menurut Al-Allamah As-Sakhawi -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-3&amp;sec=bab3-sec-2</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 2: Cap Orang Paling Kikir (Al-Bakhīl) bagi yang Enggan Bersholawat -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-3&amp;sec=bab3-sec-3</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 3: Sikap Kasar &amp; Tak Tahu Diri (Al-Jafā&apos;) Menjauh dari Rasulullah ﷺ -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-3&amp;sec=bab3-sec-4</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 4: Majelis Tanpa Dzikir &amp; Sholawat Menjadi Kerugian dan Penyesalan (Tirah) -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-3&amp;sec=bab3-sec-5</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 5: Adab Utama Berdoa — Sholawat Pembuka Pintu Ijabah -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-3&amp;sec=bab3-sec-6</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Hadits 6: Tata Cara Shalat Hajat &amp; Matan Doa Hajat Yang Mustajab -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-3&amp;sec=bab3-sec-7</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 
-  <!-- Bab IV: Faedah, Manfaat & Khasiat Bershalawat di Dunia & Akhirat -->
+  <!-- Bab IV: Faedah, Manfaat & Khasiat Bershalawat -->
   <url>
     <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-4</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
+  </url>
+  <!-- Subtitle: Pertama: Hukum Membaca Sholawat dalam Syariat Islam -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-4&amp;sec=bab4-sec-1</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kedua: Hukum &amp; Dalil Menyematkan Lafadz &quot;Sayyidina&quot; di Depan Nama Mulia Nabi ﷺ -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-4&amp;sec=bab4-sec-2</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Dalil-Dalil Shahih Pemakaian Gelar &quot;Sayyid&quot; dalam Al-Qur&apos;an &amp; Sunnah -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-4&amp;sec=bab4-sec-3</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Ketiga: Hukum &amp; Dalil Menyematkan Lafadz &quot;Maulana&quot; bagi Rasulullah ﷺ -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-4&amp;sec=bab4-sec-4</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Keempat: Keutamaan Agung Menuliskan Sholawat &amp; Peringatan Tidak Menyingkatnya -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-4&amp;sec=bab4-sec-5</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kelima: Ringkasan Adab-Adab Sholawat Menurut Syaikh Asyraf Ali Thanwi -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-4&amp;sec=bab4-sec-6</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Himpunan 8 Masalah Fiqih Seputar Sholawat (Kitab Ad-Durrul Mukhtar) -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-4&amp;sec=bab4-sec-7</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <!-- Bab V: 50 Kisah & Hikayat Teladan Berkah Shalawat -->
@@ -58,10 +492,409 @@
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
+  <!-- Subtitle: Kisah 1: Selembar Catatan Sholawat Kecil Pembeban Neraca Kebaikan di Hari Kiamat -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-1</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 2: Khalifah Umar bin Abdul Aziz Mengutus Kurir Khusus dari Syam demi Menghaturkan Salam -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-2</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 3: Pengampunan Imam Asy-Syafi&apos;i Berkat Sholawat &quot;Kullama Dzakarahudz Dzakirun -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-3</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 4: Asal-Usul Sholawat Munjiyat Penyelamat Kapal Karam di Tengah Badai Laut -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-4</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 5: Kemuliaan Surga bagi Juru Tulis Naskah Tetangga Ubaidullah Al-Qawariri -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-5</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 6: Latar Belakang Kitab Dala&apos;ilul Khairat &amp; Karamah Gadis Kecil di Bibir Sumur -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-6</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 7: Catatan Sholawat Kaligrafer Lucknow yang Diberi Tanda Ridha oleh Nabi ﷺ -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-7</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 8: Ruangan Wafat Maulana Faizul Hasan Semerbak Harum Satu Bulan Penuh -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-8</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 9: Ahli Hadits Abu Zur&apos;ah Shalat di Langit Bersama Malaikat Berkat Sejuta Sholawat -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-9</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 10: Sholawat Khamsah Rutinan Malam Jumat Imam Asy-Syafi&apos;i -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-10</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 11: Hisab Dihentikan dan Masuk Surga karena Timbangan Sholawat Lebih Berat -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-11</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 12: Ciuman Kasih Rasulullah ﷺ pada Pipi Pria yang Lisannya Basah Sholawat -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-12</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 13: Mahar Pernikahan Nabi Adam &apos;Alaihissalam dan Sayyidah Hawa -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-13</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 14: Perintah Nabi ﷺ kepada Syaikh Abu Sa&apos;id Al-Khayyath Menghadiri Majelis Sholawat -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-14</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 15: Mahkota Bertabur Permata Abul Abbas Ahmad bin Manshur di Masjid Syiraz -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-15</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 16: Pengampunan Menyeluruh Satu Majelis Berkat Gema Sholawat Lantang Misthah -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-16</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 17: Wirid Rutin 1.000 Sholawat Setiap Malam Abul Hasan Ad-Darimi -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-17</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 18: Abu Hafsh Al-Kaghazi: Timbangan Sholawat Menghentikan Proses Hisab -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-18</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 19: Pendosa Bani Israil Diampuni karena Menghormati Nama Nabi Muhammad ﷺ di Taurat -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-19</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 20: Rupa Menakutkan Amal Dosa Dikalahkan oleh Amalan Sholawat -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-20</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 21: Pemuda Tampan Semerbak Harum Pembimbing Jawaban Munkar dan Nakir di Alam Kubur -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-21</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 22: Amalan Sholawat Menuntun dan Membimbing Tangan di Atas Jembatan Shirath -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-22</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 23: Busana Sutra Hijau Pencatat Hadits Sahabat Belajar Khalaf -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-23</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 24: Teguran Nabi ﷺ kepada Fadhl yang Melewatkan Penulisan Sholawat -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-24</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 25: Teguran Kehilangan 40 Pahala Kata &quot;Wa Sallam&quot; kepada Abu Sulaiman Al-Harrani -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-25</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 26: Ibrahim An-Nasa&apos;i: Senyum Bahagia Rasulullah ﷺ Setelah Menyertakan Salam Utuh -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-26</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 27: Pengampunan Ayah Ibnu Abi Sulaiman Berkat Menuliskan Sholawat di Naskah Hadits -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-27</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 28: Sepuluh Juta Curahan Rahmat bagi Ahli Hadits Abu Zur&apos;ah -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-28</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 29: Kemuliaan Kitab Ar-Risalah Imam Asy-Syafi&apos;i &amp; Pembebasan dari Proses Hisab -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-29</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 30: Pilar Cahaya Menembus Langit Saat Abul Qasim Al-Marwazi Mengoreksi Hadits -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-30</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 31: Senyuman Rasulullah ﷺ Memeriksa Naskah Kitab Abu Ishaq Nahsyal -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-31</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 32: Teguran Nabi ﷺ kepada Hasan bin Musa Al-Hadhrami (Ibnu &apos;Ujainah) -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-32</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 33: Sholawat Panjang Abu Thahir &quot;Tasliman Katsiran Katsiran Katsira -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-33</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 34: Keberkahan Tiga Helai Rambut Suci Nabi ﷺ bagi Saudagar di Balkh -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-34</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 35: Hadiah Satu Kali Sholawat Membebaskan 70.000 Penghuni Kubur dari Azab -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-35</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 36: Wahyu Allah kepada Nabi Musa &apos;Alaihissalam Mengenai Kedekatan Lewat Sholawat -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-36</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 37: Harum Wangi Minyak Kasturi Delapan Hari di Pipi Muhammad bin Sa&apos;id -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-37</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 38: Rahasia 1.000 Sholawat Malam Jumat Wazir Ali bin Isa &amp; Bantuan 1.000 Dinar Emas -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-38</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 39: Tangan Bengkak dan Sakit Parah Sembuh Seketika karena Sholawat -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-39</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 40: Penerimaan Penuh Ridha Kitab Al-Qaulul Badi&apos; oleh Rasulullah ﷺ -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-40</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 41: Rahasia Abu Bakar Asy-Syibli Membaca Ayat &quot;Laqad Ja&apos;akum&quot; &amp; 3x Sholawat -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-41</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 42: Wajah Menghitam Berubah Putih Bersinar Rembulan di Saat Sakaratul Maut -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-42</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 43: Perlindungan dari Pedihnya Sakaratul Maut bagi Pengamal Sholawat -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-43</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 44: Sholawat Khusus Penyembuh Penyakit Retensi Urin (Susah Buang Air Kecil) -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-44</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 45: Usapan Tangan Nabi ﷺ Menyembuhkan Sakit Perut Ibunda Pemuda di Hijaz -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-45</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 46: Ratapan dan Untaian Mutiara Pujian Sayyidina Umar RA di Makam Suci Nabi ﷺ -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-46</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 47: Pertolongan Nabi Khidir AS &amp; Sepotong Roti Nyata di Belakang Mimbar Madinah -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-47</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 48: Karamah dan Pengalaman Ruhani Syaikh Syah Waliyullah Dehlawi -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-48</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 49: Dialog Kemuliaan Siang dan Malam, Isra Mi&apos;raj, serta Bait Qashidah Burdah -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-49</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Kisah 50: Gelora Cinta Maulana Jami&apos; &amp; Uluran Tangan Mulia Rasulullah ﷺ Menjabat Sayyid Ahmad Ar-Rifa&apos;i -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=bab-5&amp;sec=bab5-sec-50</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
 
-  <!-- Khatimah: Penutup & Untaian Bait Syair Kerinduan kepada Rasulullah ﷺ -->
+  <!-- Khatimah: Penutup & Bait Syair Kerinduan Nabi ﷺ -->
   <url>
     <loc>https://keutamaan-shalawat.vercel.app/?bab=khatimah</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <!-- Subtitle: Untaian Syair Mathnawi Kerinduan Karya Maulana Abdurrahman Jami&apos; (Teks Parsi &amp; Terjemahan) -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=khatimah&amp;sec=khatimah-sec-1</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Lanjutan Mathnawi: Kerinduan Berziarah di Raudhah &amp; Syafaat &quot;Ya Rabbi Ummati Ummati -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=khatimah&amp;sec=khatimah-sec-2</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Petikan Qashidah Bahariyyah Karya Hujjatul Islam Maulana Muhammad Qasim Nanotwi -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=khatimah&amp;sec=khatimah-sec-3</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Lanjutan Qashidah Bahariyyah: Gelora Mahabbah &amp; Harapan Syafaat bagi Si Fakir Qasim -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=khatimah&amp;sec=khatimah-sec-4</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Catatan Penutup Penulis Kitab: Syaikhul Hadits Maulana Muhammad Zakariya Kandhlawi -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=khatimah&amp;sec=khatimah-sec-5</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Pentingnya Risalah yang Penuh Berkah Ini dan Alasan Penerbitan Khusus (Pengurus Maktabah) -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=khatimah&amp;sec=khatimah-sec-6</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Subtitle: Untaian Dua Hadits Kemuliaan Penutup Kitab -->
+  <url>
+    <loc>https://keutamaan-shalawat.vercel.app/?bab=khatimah&amp;sec=khatimah-sec-7</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>

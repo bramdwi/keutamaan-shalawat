@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "node scripts/generateSitemap.cjs && tsc -b && vite build",
+    "sitemap": "node scripts/generateSitemap.cjs",
     "lint": "oxlint",
     "preview": "vite preview"
   },

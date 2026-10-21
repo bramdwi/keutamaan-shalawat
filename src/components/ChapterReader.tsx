@@ -287,9 +287,10 @@ export const ChapterReader: React.FC<ChapterReaderProps> = ({
 
                 {/* Arabic Text */}
                 {preferences.showArabic && section.arabic && (
-                  <div className="my-6 py-2 px-1">
+                  <div className="my-6 py-2 px-1 text-center">
                     <p
-                      className={`${preferences.arabicFontFamily === 'scheherazade' ? 'font-scheherazade' : 'font-arabic'} ${getArabicSizeClass()} ${getArabicTextColor()} font-normal select-text tracking-wide`}
+                      dir="rtl"
+                      className={`${preferences.arabicFontFamily === 'scheherazade' ? 'font-scheherazade' : 'font-arabic'} ${getArabicSizeClass()} ${getArabicTextColor()} font-normal select-text tracking-wide text-center`}
                     >
                       {section.arabic}
                     </p>

@@ -45,13 +45,13 @@ export const bab4: Chapter = {
       transliteration: 'Abū Bakrin sayyidunā wa a\'taqa sayyidanā (ya\'nī Bilālā).',
       translation: 'Sayyidina Umar bin Al-Khattab radhiyallahu \'anhu senantiasa berkata: "Abu Bakar adalah sayyid (pemimpin) kami, dan beliau telah memerdekakan sayyid kami (yaitu Bilal)." (Shahih Al-Bukhari)',
       explanation: [
-        '1. Sabda Nabi ﷺ: «Anā sayyidun-nāsi yaumal-qiyāmah» (Shahih Bukhari & Muslim).',
-        '2. Sabda beliau perihal cucunya Sayyidina Hasan: «Innabnī hādzā sayyidun» — Sesungguhnya putraku ini adalah seorang sayyid/pemimpin (Shahih Bukhari).',
-        '3. Perintah kepada kaum Anshar menghormati Sa\'ad bin Mu\'adz: «Qūmū ilā sayyidikum» — Berdirilah menghormati sayyid/pemimpin kalian (Shahih Bukhari & Muslim).',
-        '4. Sapaan Sayyidina Sahl bin Hunaif kepada Nabi ﷺ: «Yā Sayyidī» (An-Nasa\'i - \'Amalul Yaum wal Lailah).',
-        '5. Sholawat Sayyidina Abdullah bin Mas\'ud: «Allāhumma ṣalli \'alā Sayyidil Mursilīn» (Ya Allah limpahkan sholawat kepada Penghulu para Rasul).',
-        '6. Firman Allah memuji Nabi Yahya AS: «Sayyidaw wa ḥashūrā» (QS. Ali \'Imran: 39).',
-        '7. Perintah Nabi ﷺ kepada pelayan di Shahih Bukhari: «Wal yaqul sayyidī wa maulāy» (Hendaklah memanggil tuannya: tuanku dan junjunganku).',
+        '1. Sabda Nabi ﷺ: “Anā sayyidun-nāsi yaumal-qiyāmah” (Shahih Bukhari & Muslim).',
+        '2. Sabda beliau perihal cucunya Sayyidina Hasan: “Innabnī hādzā sayyidun” — Sesungguhnya putraku ini adalah seorang sayyid/pemimpin (Shahih Bukhari).',
+        '3. Perintah kepada kaum Anshar menghormati Sa\'ad bin Mu\'adz: “Qūmū ilā sayyidikum” — Berdirilah menghormati sayyid/pemimpin kalian (Shahih Bukhari & Muslim).',
+        '4. Sapaan Sayyidina Sahl bin Hunaif kepada Nabi ﷺ: “Yā Sayyidī” (An-Nasa\'i - \'Amalul Yaum wal Lailah).',
+        '5. Sholawat Sayyidina Abdullah bin Mas\'ud: “Allāhumma ṣalli \'alā Sayyidil Mursilīn” (Ya Allah limpahkan sholawat kepada Penghulu para Rasul).',
+        '6. Firman Allah memuji Nabi Yahya AS: “Sayyidaw wa ḥashūrā” (QS. Ali \'Imran: 39).',
+        '7. Perintah Nabi ﷺ kepada pelayan di Shahih Bukhari: “Wal yaqul sayyidī wa maulāy” (Hendaklah memanggil tuannya: tuanku dan junjunganku).',
         '8. Fatwa Imam Malik: Penduduk Madinah sama sekali tidak memakruhkan sapaan "Ya Sayyidi" kepada orang mulia.'
       ],
       tags: ['Dalil Sayyid', 'Shahih Bukhari', 'Sayyidina Umar', 'Badruddin Al-Aini', 'Imam Malik']
@@ -64,11 +64,11 @@ export const bab4: Chapter = {
       transliteration: 'Man kuntu maulāhu fa \'Aliyyun maulāh.',
       translation: 'Rasulullah ﷺ bersabda: "Barangsiapa yang menjadikanku sebagai maulanya (pemimpin & pelindungnya), maka Ali adalah maulanya." (HR. Ahmad & At-Tirmidzi - Hadits Shahih Mutawatir)',
       explanation: [
-        'Keabsahan Gelar Maulana: Tidak ditemukan satu dalil pun yang melarang menyematkan kata Maulana bagi Nabi Muhammad ﷺ. Adapun kalimat perang Uhud «Allāhu Maulānā wa lā maulā lakum» (QS. Muhammad: 11) menafikan pelindung mutlak bagi orang kafir.',
+        'Keabsahan Gelar Maulana: Tidak ditemukan satu dalil pun yang melarang menyematkan kata Maulana bagi Nabi Muhammad ﷺ. Adapun kalimat perang Uhud “Allāhu Maulānā wa lā maulā lakum” (QS. Muhammad: 11) menafikan pelindung mutlak bagi orang kafir.',
         'Beragam Makna Kata Maula (Mulla Ali Al-Qari - An-Nihayah): Kata Maula memiliki makna luas: Rabb/Pencipta (bila disandarkan pada Allah), pemimpin, penolong (nashir), pelindung (wali), pecinta, pengikut, dan sekutu.',
         'Al-Maula sebagai Nama Kemuliaan Nabi ﷺ: Al-Allamah As-Sakhawi (Al-Qaulul Badi\'), Al-Qasthallani (Al-Mawahib), dan Az-Zarqani mencantumkan Al-Maula dan Al-Wali sebagai nama luhur Rasulullah ﷺ dengan makna pelindung dan pembela umat.',
-        'Sabda Nabi ﷺ (Shahih Bukhari): «Anta akhūnā wa maulānā» (Engkau adalah saudara kami dan maula kami - kepada Zaid bin Haritsah).',
-        'Riwayat Sahabat Anshar di Kufah: Rombongan sahabat yang dipimpin Sayyidina Abu Ayyub Al-Anshari menyapa Sayyidina Ali dengan ucapan: «Assalāmu \'alaika yā Maulānā» berlandaskan hadits Ghadir Khum di atas.',
+        'Sabda Nabi ﷺ (Shahih Bukhari): “Anta akhūnā wa maulānā” (Engkau adalah saudara kami dan maula kami - kepada Zaid bin Haritsah).',
+        'Riwayat Sahabat Anshar di Kufah: Rombongan sahabat yang dipimpin Sayyidina Abu Ayyub Al-Anshari menyapa Sayyidina Ali dengan ucapan: “Assalāmu \'alaika yā Maulānā” berlandaskan hadits Ghadir Khum di atas.',
         'Ibnu Hajar (Fathul Bari): Penggunaan gelar Maula bahkan lebih lapang dalam bahasa Arab dibandingkan kata Sayyid.'
       ],
       tags: ['Maulana', 'HR. Ahmad', 'HR. At-Tirmidzi', 'Mulla Ali Al-Qari', 'Abu Ayyub Al-Anshari']

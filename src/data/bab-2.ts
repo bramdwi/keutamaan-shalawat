@@ -84,7 +84,7 @@ export const bab2: Chapter = {
       hadithNumber: 'Hadits Hasan',
       explanation: [
         'Kaifiyat Pengamalan: Dibaca seusai shalat Ashar pada hari Jumat sebanyak 80 kali sebelum beranjak dari tempat duduknya dengan lafadz:',
-        '«اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ عَبْدِكَ وَنَبِيِّكَ وَرَسُولِكَ النَّبِيِّ الْأُمِّيِّ» (Allāhumma ṣalli \'alā Muḥammadin \'abdika wa nabiyyika wa rasūlikan-nabiyyil-ummiyy).',
+        '“اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ عَبْدِكَ وَنَبِيِّكَ وَرَسُولِكَ النَّبِيِّ الْأُمِّيِّ” (Allāhumma ṣalli \'alā Muḥammadin \'abdika wa nabiyyika wa rasūlikan-nabiyyil-ummiyy).',
         'Sunnah Menghitung dengan Jemari: Nabi ﷺ melipat satu per satu ruas jari jemari beliau saat mengajarkannya. Ruas jari jemari kelak akan bersaksi di hari kiamat.',
         'Syaikh Abu Sulaiman Ad-Darani: Seluruh amal ibadah manusia berada di antara peluang diterima atau ditolak, kecuali sholawat kepada Nabi ﷺ yang pasti senantiasa diterima di sisi Allah.'
       ],
@@ -144,7 +144,7 @@ export const bab2: Chapter = {
       number: 9,
       title: 'Hadits 8: Sholawat & Doa Masuk Serta Keluar Masjid',
       arabic: 'عَنْ أَبِي حُمَيْدٍ أَوْ عَنْ أَبِي أُسَيْدٍ السَّاعِدِيِّ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: إِذَا دَخَلَ أَحَدُكُمْ فِي الْمَسْجِدِ فَلْيُسَلِّمْ عَلَى النَّبِيِّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ ثُمَّ لْيَقُلْ: اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ، وَإِذَا خَرَجَ مِنَ الْمَسْجِدِ فَلْيُسَلِّمْ عَلَى النَّبِيِّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ ثُمَّ لْيَقُلْ: اللَّهُمَّ افْتَحْ لِي أَبْوَابَ فَضْلِكَ',
-      transliteration: 'Masuk: «Allāhummaftaḥ lī abwāba raḥmatik» | Keluar: «Allāhummaftaḥ lī abwāba faḍlik»',
+      transliteration: 'Masuk: “Allāhummaftaḥ lī abwāba raḥmatik” | Keluar: “Allāhummaftaḥ lī abwāba faḍlik”',
       translation: 'Dari Sayyidina Abu Humaid atau Abu Usaid As-Sa\'idi radhiyallahu \'anhuma, Rasulullah ﷺ bersabda: "Apabila salah seorang di antara kalian masuk ke dalam masjid, hendaklah ia mengucapkan salam kepada Nabi ﷺ kemudian berdoa: Ya Allah, bukakanlah untukku pintu-pintu rahmat-Mu. Dan apabila ia keluar dari masjid, hendaklah ia mengucapkan salam kepada Nabi ﷺ kemudian berdoa: Ya Allah, bukakanlah untukku pintu-pintu karunia-Mu."',
       narrator: 'HR. Abu Dawud (no. 465), An-Nasa\'i, Ibnu Majah, dan Ibnu Hibban',
       hadithNumber: 'Hadits Shahih',
@@ -164,9 +164,9 @@ export const bab2: Chapter = {
       translation: 'Ya Allah, limpahkanlah sholawat kepada ruh Sayyidina Muhammad di alam arwah, kepada jasad Sayyidina Muhammad di alam jasad, dan kepada makam Sayyidina Muhammad di alam kubur.',
       explanation: [
         'Sabda Nabi ﷺ (Al-Qaulul Badi\'): "Barangsiapa bersholawat kepada ruhku di alam arwah, jasadku di alam jasad, dan kuburku di alam kubur, ia akan melihatku di dalam mimpi; siapa melihatku dalam mimpi akan melihatku di hari kiamat dan memperoleh syafaatku serta minum dari telagaku."',
-        'Amalan Syaikh Abdul Haq Dehlawi (Targhib Ahlis Sa\'adah): Malam Jumat shalat 2 rakaat (setiap rakaat Ayat Kursi 11x & Al-Ikhlas 11x), setelah salam membaca 100x: «اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ النَّبِيِّ الْأُمِّيِّ وَآلِهِ وَأَصْحَابِهِ وَسَلِّمْ». Insya Allah tidak lewat 3 Jumat akan dianugerahi mimpi.',
+        'Amalan Syaikh Abdul Haq Dehlawi (Targhib Ahlis Sa\'adah): Malam Jumat shalat 2 rakaat (setiap rakaat Ayat Kursi 11x & Al-Ikhlas 11x), setelah salam membaca 100x: “اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ النَّبِيِّ الْأُمِّيِّ وَآلِهِ وَأَصْحَابِهِ وَسَلِّمْ”. Insya Allah tidak lewat 3 Jumat akan dianugerahi mimpi.',
         'Sholawat Bahrul Anwar: Dibaca 70x sebelum tidur.',
-        'Doa Sebelum Tidur: «اللَّهُمَّ رَبَّ الْحِلِّ وَالْحَرَامِ وَرَبَّ الْبَيْتِ الْحَرَامِ وَرَبَّ الرُّكْنِ وَالْمَقَامِ أَبْلِغْ لِرُوحِ سَيِّدِنَا وَمَوْلَانَا مُحَمَّدٍ مِنَّا السَّلَامَ».',
+        'Doa Sebelum Tidur: “اللَّهُمَّ رَبَّ الْحِلِّ وَالْحَرَامِ وَرَبَّ الْبَيْتِ الْحَرَامِ وَرَبَّ الرُّكْنِ وَالْمَقَامِ أَبْلِغْ لِرُوحِ سَيِّدِنَا وَمَوْلَانَا مُحَمَّدٍ مِنَّا السَّلَامَ”.',
         'Amalan Wali Abdal dari Nabi Khidir AS (An-Nawadir Syaikh Waliyullah Dehlawi): Shalat sunnah ba\'da Maghrib & Isya, sujud dengan istighfar, sholawat, tasbih 7x, lalu tidur miring ke kanan menghadap kiblat.'
       ],
       tags: ['Mimpi Bertemu Nabi ﷺ', 'Abdul Haq Dehlawi', 'Nabi Khidir AS', 'Bahrul Anwar']

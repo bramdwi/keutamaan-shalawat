@@ -53,7 +53,7 @@ export const bab3: Chapter = {
       narrator: 'HR. At-Tirmidzi (no. 3546 - hasan shahih), An-Nasa\'i, Al-Bukhari (At-Tarikh Al-Kabir), Ahmad',
       hadithNumber: 'Hadits Hasan Shahih',
       explanation: [
-        'Syair Al-Allamah As-Sakhawi: «مَنْ لَمْ يُصَلِّ عَلَيْهِ إِنْ ذُكِرَ اسْمُهُ ... فَهُوَ الْبَخِيلُ وَزِدْهُ وَصْفَ جَبَانِ» (Barangsiapa tidak bersholawat saat nama suci beliau disebut, dialah orang yang kikir sejati, dan tambahkanlah padanya sifat pengecut lagi hina).',
+        'Syair Al-Allamah As-Sakhawi: “مَنْ لَمْ يُصَلِّ عَلَيْهِ إِنْ ذُكِرَ اسْمُهُ ... فَهُوَ الْبَخِيلُ وَزِدْهُ وَصْفَ جَبَانِ” (Barangsiapa tidak bersholawat saat nama suci beliau disebut, dialah orang yang kikir sejati, dan tambahkanlah padanya sifat pengecut lagi hina).',
         'Riwayat Sayyidina Husain RA: "Cukuplah menjadi bukti kekikiran seseorang tatkala namaku disebut di dekatnya lalu ia tidak bersholawat kepadaku."',
         'Riwayat Sayyidina Anas RA: "Maukah kalian kuberitahukan siapa orang yang paling kikir dan paling lemah di antara manusia? Yaitu orang yang namaku disebut di sisinya lalu ia tidak bersholawat kepadaku."',
         'Riwayat Sayyidah Aisyah RA: "Celakalah orang yang tidak dapat melihat wajahku pada hari kiamat... yaitu orang kikir yang mendengar namaku disebut namun enggan bersholawat."',

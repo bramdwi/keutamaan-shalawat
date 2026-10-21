@@ -41,7 +41,7 @@ export const tasbihAmalanList: TasbihAmalan[] = [
     arabic: 'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الأُمِّيِّ وَعَلَى آلِهِ وَسَلِّمْ تَسْلِيمًا',
     latin: 'Allāhumma ṣalli \'alā sayyidinā Muḥammadin-nabiyyil-ummiyyi wa \'alā ālihī wa sallim taslīmā',
     translation: 'Ya Allah, limpahkanlah sholawat kepada junjungan kami Nabi Muhammad, Nabi yang ummi, dan kepada keluarganya, serta curahkanlah salam penghormatan kepadanya.',
-    fadhilah: 'Sebagaimana tercatat dalam ulasan penerbit mengenai profil penulis: Selama 25-30 tahun terakhir setiap selesai shalat Ashar pada hari Jumat sebelum beranjak dari tempat duduknya, Quthbul Aqthab Syaikhul Hadits Maulana Muhammad Zakariya Kandhlawi Muhajir Madani senantiasa membaca sholawat 80 kali dengan lafadz: «اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الْأُمِّيِّ وَعَلَى آلِهِ وَسَلِّمْ تَسْلِيمًا».',
+    fadhilah: 'Sebagaimana tercatat dalam ulasan penerbit mengenai profil penulis: Selama 25-30 tahun terakhir setiap selesai shalat Ashar pada hari Jumat sebelum beranjak dari tempat duduknya, Quthbul Aqthab Syaikhul Hadits Maulana Muhammad Zakariya Kandhlawi Muhajir Madani senantiasa membaca sholawat 80 kali dengan lafadz: “اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الْأُمِّيِّ وَعَلَى آلِهِ وَسَلِّمْ تَسْلِيمًا”.',
     source: 'Khatimah: Pasal 6',
     targetChapterId: 'khatimah',
     targetSectionId: 'khatimah-sec-6'
@@ -223,7 +223,7 @@ export const tasbihAmalanList: TasbihAmalan[] = [
     badge: 'Pintu Rahmat & Karunia',
     defaultTarget: 3,
     arabic: 'بِسْمِ اللَّهِ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ، اللَّهُمَّ اغْفِرْ لِي ذُنُوبِي وَافْتَحْ لِي أَبْوَابَ رَحْمَتِكَ',
-    latin: 'Bismillāh was-salāmu \'alā Rasūlillāh, Allāhummaghfir lī dzunūbī waftaḥ lī abwāba raḥmatik (Saat keluar: «abwāba faḍlik»)',
+    latin: 'Bismillāh was-salāmu \'alā Rasūlillāh, Allāhummaghfir lī dzunūbī waftaḥ lī abwāba raḥmatik (Saat keluar: “abwāba faḍlik”)',
     translation: 'Dengan menyebut nama Allah dan salam sejahtera atas Rasulullah. Ya Allah, ampunilah dosa-dosaku dan bukakanlah untukku pintu-pintu rahmat-Mu (dan saat keluar: pintu-pintu karunia-Mu).',
     fadhilah: 'Dari Sayyidina Abu Humaid atau Abu Usaid As-Sa\'idi radhiyallahu \'anhuma, Rasulullah ﷺ bersabda: "Apabila salah seorang di antara kalian masuk ke dalam masjid, hendaklah ia mengucapkan salam kepada Nabi ﷺ kemudian berdoa: Ya Allah, bukakanlah untukku pintu-pintu rahmat-Mu. Dan apabila ia keluar dari masjid, hendaklah ia mengucapkan salam kepada Nabi ﷺ kemudian berdoa: Ya Allah, bukakanlah untukku pintu-pintu karunia-Mu." (HR. Abu Dawud no. 465, An-Nasa\'i, Ibnu Majah, dan Ibnu Hibban).',
     source: 'Bab II: Pasal 9 (Hadits 8)',
